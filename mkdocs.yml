@@ -3,7 +3,21 @@ site_url: https://www.acceptatie.pdok.nl/leermodule
 site_description: Een leermodule met achtergrondinformatie en oefeningen om te leren werken met OGC API's van PDOK
 repo_url: https://github.com/PDOK/leermodule-ogc-api/
 edit_uri: edit/master/docs/
-
+theme:
+  name: material
+  palette:
+   primary: custom
+   accent: light blue
+extra_css:
+  - stylesheets/extra.css
+features:
+  - navigation.instant
+  - navigation.tracking
+  - navigation.tabs
+  - search.suggest
+  - search.highlight
+  - navigation.top
+  - header.autohide
 nav:
     - Introductie: index.md
     - Achtergrondinformatie: Achtergrondinformatie.md
