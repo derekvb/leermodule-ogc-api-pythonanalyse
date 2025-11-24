@@ -2,9 +2,9 @@
 
 Welkom bij de Leermodule “Geodata bevragen en gebruiken met de OGC API’s van PDOK” !
 
-!!! warning
+!!! warning "Deze leermodule is nog in ontwikkeling"
 
-	**Deze leermodule is nog in ontwikkeling** 
+	Op dit moment wordt er nog volop gewerkt aan de inhoud, waardoor deze nog niet compleet is. 
 	
 	[Bijdragen](#bijdragen) zijn welkom
 
