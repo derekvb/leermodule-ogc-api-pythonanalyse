@@ -2,11 +2,11 @@
 
 Welkom bij de Leermodule “Geodata bevragen en gebruiken met de OGC API’s van PDOK” !
 
-:   !!! warning
+!!! warning
 
 	**Deze leermodule is nog in ontwikkeling** 
-
-[Bijdragen](#bijdragen) zijn welkom
+	
+	[Bijdragen](#bijdragen) zijn welkom
 
 In deze leermodule ga je aan de slag met de OGC API’s van PDOK (Publieke dienstverlening op de kaart). PDOK is hét geodataplatform van de Nederlandse overheid. Je leert in deze leermodule hoe je met behulp van OGC API’s geografische data in je browser kunt bekijken, hoe je de data kunt bevragen en hoe je de data op een interactieve kaart kunt tonen. Denk bijvoorbeeld aan een kaart waarop je kunt zien hoeveel inwoners er bij jou in de buurt wonen. 
 
