@@ -29,10 +29,12 @@ Leerdoelen:
 - Je leert uit welke componenten een OGC API – Tiles bestaat en hoe die componenten samenwerken. 
 
 We gaan eerst een voorbeeld bekijken. 
+
 - Bekijk `voorbeelden/tiles_maplibre/index.html`
 - Bekijk de kaart zelf, zoom eens in en uit
 
 Dit is een web viewer die gemaakt is met de library MapLibre. Deze kaart maakt gebruik van de OGC API – Tiles van de BRT Achtergrondkaart: <https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1> 
+
 <img width="476" height="535" alt="brtachtergrondkaart" src="https://github.com/user-attachments/assets/d26c23cb-a1c3-480b-843e-168c22b3cb4b" />
  
 > **VRAAG:** wat verandert er als je in- en uitzoomt op de kaart? 
