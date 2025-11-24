@@ -14,7 +14,12 @@ OGC API's stellen geodata beschikbaar. Wat is geodata, ook wel **ruimtelijke inf
 
 Wat is ruimtelijke informatie, ook wel geo-informatie genoemd, en wat kun je ermee? Geodata is overal om ons heen. Vaak hoor je dat 80% van alle data over een plek op aarde gaat. 
 
-TO DO Voorbeelden / use cases die de meerwaarde van geodata aantonen. Verschillende vormen van ruimtelijke informatie / geodata 
+!!! warning "TO DO"
+    Voorbeelden / use cases die de meerwaarde van geodata aantonen. Verschillende vormen van ruimtelijke informatie / geodata 
+
+!!! question "Vraag"
+
+    Welke toepassingen van geo-informatie ken jij? Schrijf een aantal voorbeelden op. 
 
 ## Wat doet het Kadaster / PDOK? 
 
