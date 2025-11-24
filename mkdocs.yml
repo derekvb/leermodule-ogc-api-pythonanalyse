@@ -4,20 +4,24 @@ site_description: Een leermodule met achtergrondinformatie en oefeningen om te l
 repo_url: https://github.com/PDOK/leermodule-ogc-api/
 edit_uri: edit/master/docs/
 theme:
+  language: nl
   name: material
   palette:
    primary: custom
    accent: light blue
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - search.suggest
+    - search.highlight
+    - navigation.top
+    - header.autohide
 extra_css:
   - stylesheets/extra.css
-features:
-  - navigation.instant
-  - navigation.tracking
-  - navigation.tabs
-  - search.suggest
-  - search.highlight
-  - navigation.top
-  - header.autohide
+plugins:
+  - search:
+      lang: nl
 nav:
     - Introductie: index.md
     - Achtergrondinformatie: Achtergrondinformatie.md
