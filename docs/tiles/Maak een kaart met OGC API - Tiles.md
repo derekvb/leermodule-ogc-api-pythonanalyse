@@ -15,9 +15,12 @@ In deze casus nemen we jou stap voor stap mee:
 4. Voeg OGC API - Features toe aan jouw kaart
 5. Evalueer het eindresultaat
 
-Maak gebruik van een platform naar keuze om code uit te voeren
+## Zelf code runnen
 
-•	Fork en clone de repo
+Maak gebruik van een platform of IDE naar keuze om code uit te voeren. Hieronder een uitleg voor VSCode, maar je kunt natuurlijk zelf een keuze maken. 
+
+- Fork de Git repository
+- Clone de Git repository
 
 ## Bekijk een voorbeeld
 Leerdoelen: 
@@ -62,15 +65,33 @@ De URL is als volgt opgebouwd:
 
 ### Bekijk nu de code van dichtbij
 
-- Bekijk `index.html`
-- Bekijk `main.js`
+- Open de repository in VSCode of een andere IDE
+
+Laten we deze code runnen zodat we de applicatie eerst in de browser kunnen bekijken:
+
+- Start een web server, bijvoorbeeld met python:
+
+```
+> python -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+```
+- Bekijk nu `voorbeeld\index.html` in browser
+
+![voorbeeld van kaart die met maplibre is gemaakt](msedge_gjEJAEdbND.png)
+
+Laten we in de code duiken:
+
+- Bekijk `voorbeeld\index.html`
+- Bekijk `voorbeeld\main.js`
 - Bekijk <https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1/styles/standaard__webmercatorquad?f=json>
 
-Als het goed is, zie je in `index.html` een `div` met als id `map`
-In `main.js` zie je dat er verwezen wordt naar diezelfde `map` als container. In dit javascript bestand wordt de kaart gedefinieerd:
+Als het goed is, zie je in de code `index.html` een `div` met als id `map`.
 
+In `main.js` zie je dat er bij `container` dat er naar diezelfde `map` wordt verwezen. In dit javascript bestand wordt allereerst de `mmaplibre-gl` library geïmporteerd. Daarna wordt de kaart gedefinieerd:
+
+- `container`: `map` object in `index.html`
 - `style`: verwijst naar een `style.json` bestand. Hierin wordt gedefinieerd hoe de tiles gevisualiseerd worden
-- `center`: bepaalt het startmiddenpunt van de kaart
+- `center`: bepaalt het startmiddenpunt van de kaart (x- en y-coördinaten)
 - `zoom`: bepaalt het startzoomlevel van de kaart
 - `minZoom`: bepaalt het maximale niveau dat je mag uitzoomen
 - `maxZoom`: bepaalt het maximale niveau dat je mag inzoomen
