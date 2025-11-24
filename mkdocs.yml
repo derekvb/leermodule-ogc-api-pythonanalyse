@@ -32,7 +32,9 @@ plugins:
       lang: nl
 nav:
     - Introductie: index.md
-    - Achtergrondinformatie: Achtergrondinformatie.md
+    - Achtergrondinformatie: 
+        - Achtergondinformatie: achtergrondinformatie/Achtergrondinformatie.md
+        - Terugblik: achtergrondinformatie/Terugblik.md
     - OGC API - Tiles: 
         - Introductie: tiles/Introductie.md
         - Verken OGC API - Tiles in de browser: tiles/Verken OGC API - Tiles in de browser.md

@@ -34,7 +34,7 @@ Een OGC API bestaat altijd uit dezelfde onderdelen. En de OGC API kent verschill
 
 ### OGC API onderdelen
 TO DO
-![De OGC API building blocks](assets/ogc-api-building-blocks.png)
+![De OGC API building blocks](../assets/ogc-api-building-blocks.png)
 
 | Onderdeel | Beschrijving | Beschikbaar bij PDOK? |
 | ----- | ---- | :----: |
