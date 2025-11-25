@@ -23,7 +23,7 @@ Leerdoelen:
 
 We gaan eerst een voorbeeld bekijken. 
 
-- **Bekijk** [voorbeelden/tiles/index.html](../../voorbeelden/tiles/index.html)
+- **Bekijk** [../voorbeelden/tiles/index.html](../voorbeelden/tiles/index.html)
 - **Bekijk de kaart zelf, zoom eens in en uit**
 
 Dit is een web viewer die gemaakt is met de library MapLibre. Deze kaart maakt gebruik van de OGC API – Tiles van de BRT Achtergrondkaart: <https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1> 
@@ -47,7 +47,7 @@ Merk op dat er nu veel bestanden worden ingeladen, bijvoorbeeld `262?f=mvt`. Dit
 
 Je kunt nu zien dat deze web viewer de BRT Achtergrondkaart gebruikt, en meer specifiek de WebMercatorQuad TileMatrixSet. Dat zie je aan de URL’s van de tiles. En je ziet dat de standaard style wordt gebruikt voor deze tilematrixset. Dat zie je aan de style URL die na `main.js` werd ingeladen: <https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1/styles/standaard__webmercatorquad?f=json>
 
-- Zoek deze TileMatrixSet en Style ook op via de landing page in de browser: <https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1> 
+- **Zoek deze TileMatrixSet en Style ook op via de landing page in de browser:** <https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1> 
 
 !!! question "Vraag"
 
@@ -77,14 +77,14 @@ Laten we deze code runnen zodat we de applicatie eerst in de browser kunnen beki
 > python -m http.server
 Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 ```
-- **Bekijk nu [voorbeelden/tiles/index.html](../../voorbeelden/tiles/index.html) in de browser**
+- **Bekijk nu** [../voorbeelden/tiles/index.html](../voorbeelden/tiles/index.html) **in de browser**
 
 ![voorbeeld van kaart die met maplibre is gemaakt](msedge_gjEJAEdbND.png)
 
 Laten we nu eens de code bekijken in een editor:
 
-- **Bekijk** `voorbeelden\tiles\index.html`
-- **Bekijk** `voorbeelden\tiles\main.js`
+- **Bekijk** `..\voorbeelden\tiles\index.html`
+- **Bekijk** `..\voorbeelden\tiles\main.js`
 - **Bekijk** <https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1/styles/standaard__webmercatorquad?f=json>
 
 Als het goed is, zie je in de code `index.html` een `div` met als id `map`.
