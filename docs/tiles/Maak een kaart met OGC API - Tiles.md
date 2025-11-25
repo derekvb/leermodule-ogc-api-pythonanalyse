@@ -120,6 +120,6 @@ In dit geval is de `style json` beschikbaar gesteld door PDOK, maar je kunt ook 
 ## Maak een kaart 
 We gaan nu onze eigen web map met een OGC API Tiles achtergrondkaart (BRT) maken, aan de hand van het voorbeeld. 
 
-TO DO
+!!! warning "TO DO"
 
 

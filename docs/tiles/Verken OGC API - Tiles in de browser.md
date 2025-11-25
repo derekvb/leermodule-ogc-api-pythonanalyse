@@ -46,7 +46,8 @@ Hieronder een handig overzicht van welke pagina bij welke API hoort.
 Laten we de verschillende pagina’s eens gaan verkennen.
 
 ## OGC API - Common onderdelen
-TO DO
+
+!!! warning "TO DO"
 
 ### OpenAPI specification
 Hier zie je de Swagger UI van deze API, die alle mogelijkheden toont. 

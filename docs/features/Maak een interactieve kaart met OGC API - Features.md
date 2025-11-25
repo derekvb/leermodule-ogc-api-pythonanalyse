@@ -4,14 +4,16 @@ Tot nu toe hebben we vooral gekeken naar visualisatie van data. Het bekijken van
 We bekijken eerst een voorbeeldkaart. Daarna maak je je eigen kaart. Je voegt geodata aan je kaart toe in de vorm van een statisch GeoJSON bestand. En tot slot voeg je een OGC API - Features toe aan jouw kaart. 
 
 ## Plot een GeoJSON bestand op de kaart
-TO DO
+
+!!! warning "TO DO"
 
 We gaan nu een GeoJSON bestand toevoegen aan onze kaart. 
 
 Inzicht: een statisch bestandje is geen goeie databron. Je kaart loopt al snel achter. Hiermee tonen we de meerwaarde van PDOK aan: een stabiele databron met altijd actuele data. Hier besteden we in het theoriedeel al aandacht aan
 
 ## Voeg een OGC API – Features toe aan je kaart
-TO DO
+
+!!! warning "TO DO"
 
 We gaan nu een OGC API - Features toevoegen aan onze kaart. 
 
