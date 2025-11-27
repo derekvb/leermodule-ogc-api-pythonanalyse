@@ -1,4 +1,4 @@
-# Voeg interactieve data toe met OGC API - Features
+# Maak een interactieve kaart met OGC API - Features
 Tot nu toe hebben we vooral gekeken naar visualisatie van data. Het bekijken van geodata is maar slechts één aspect van het gebruiken van geodata. In dit onderdeel voeg je data aan je kaart toe die je op een interactieve manier kunt gebruiken. We doen dit met behulp van de JavaScript library MapLibre. 
 
 We bekijken eerst een voorbeeldkaart. Daarna maak je je eigen kaart. Je voegt geodata aan je kaart toe in de vorm van een statisch GeoJSON bestand. En tot slot voeg je een OGC API - Features toe aan jouw kaart. 
