@@ -75,7 +75,7 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 ```
 - **Bekijk nu** [../voorbeelden/tiles/index.html](../voorbeelden/tiles/index.html) **in de browser**
 
-![voorbeeld van kaart die met maplibre is gemaakt](msedge_gjEJAEdbND.png)
+![voorbeeld van kaart die met maplibre is gemaakt](../assets/msedge_gjEJAEdbND.png)
 
 Laten we nu eens de code bekijken in een editor:
 

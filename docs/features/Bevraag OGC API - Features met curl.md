@@ -20,7 +20,7 @@ Met de OpenAPI specification pagina kun je heel makkelijk commando's voor `curl`
 
 Weet je niet meer waar je die kunt vinden? Kijk dan even in één van de vorige onderdelen. 
 
-![BGT OpenAPI specification](firefox_rZYxsIgvbl.png)
+![BGT OpenAPI specification](../assets/firefox_rZYxsIgvbl.png)
 
 ## OpenAPI specification opvragen
 
@@ -28,14 +28,14 @@ Laten we beginnen met een simpele vraag. We vragen eerst de `OpenAPI specificati
 
 - **Klap** 'GET `/api` This document' **open**:
 
-![GET /api This document](JIOrOGF6Mz.png)
+![GET /api This document](../assets/JIOrOGF6Mz.png)
 
 - **Klik op *Try it out***
 - **Klik op *Execute***
 
 Je krijgt nu het `curl` commando dat is afgevuurd en het resultaat (response) te zien:
 
-![curl get api specification](firefox_QQH2m2g7Dj.png)
+![curl get api specification](../assets/firefox_QQH2m2g7Dj.png)
 
 Er is één parameter meegegeven: geef het resultaat als json. En we krijgen de specificatie inderdaad netjes te zien als json-document. 
 
@@ -53,11 +53,11 @@ Voor Windows:
 curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/api?f=json" -H 'accept: */*'
 ```
 
-![curl commando in cmd](WindowsTerminal_cZQqtp6rFq.png)
+![curl commando in cmd](../assets/WindowsTerminal_cZQqtp6rFq.png)
 
 - **Druk op Enter en bekijk het resultaat:**
 
-![resultaat in cmd](WindowsTerminal_pxSf6UnL4F.png)
+![resultaat in cmd](../assets/WindowsTerminal_pxSf6UnL4F.png)
 
 ## Vraag collecties op 
 
@@ -179,7 +179,7 @@ curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor/items/7022ff2
 
 Laten we het ruimtelijk maken. Met een extra parameter kun je items opvragen binnen een specifiek gebied: een bounding box (ook wel `bbox`). Je vraagt dit gebied op met het x- en y-coördinaat van de linkeronderhoek, gevolgd door het x- en y-coördinaat van de rechterbovenhoek. Bijvoorbeeld: `4.458132,51.922276,4.478388,51.926696`
 
-![alt text](qgis-bin_rNAEoh6ooV.png)
+![alt text](../assets/qgis-bin_rNAEoh6ooV.png)
 
 Voor Windows:
 ```
