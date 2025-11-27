@@ -16,6 +16,7 @@ OGC API's stellen geodata beschikbaar. Wat is geodata, ook wel **ruimtelijke inf
 Wat is ruimtelijke informatie, ook wel geo-informatie genoemd, en wat kun je ermee? Geodata is overal om ons heen. Vaak hoor je dat 80% van alle data over een plek op aarde gaat. 
 
 !!! warning "TO DO"
+    
     Voorbeelden / use cases die de meerwaarde van geodata aantonen. Verschillende vormen van ruimtelijke informatie / geodata 
 
 !!! question "Vraag"
@@ -24,13 +25,17 @@ Wat is ruimtelijke informatie, ook wel geo-informatie genoemd, en wat kun je erm
 
 ## Wat doet het Kadaster / PDOK? 
 
-PDOK is een dataplatform waar gebruikers geodata kunnen vinden en overheidsorganisaties hun geodata kunnen publiceren. PDOK verbindt vraag en aanbod met elkaar. Bij PDOK vind je open datasets van de overheid met actuele geo-informatie. De datasets gaan over allerlei verschillende thema’s, zoals de bodem, mobiliteit en grenzen. En zijn afkomstig van allerlei verschillende overheidsorganisaties, zoals het CBS, ministeries, Rijkswaterstaat en het Kadaster.  
+[PDOK](https://www.pdok.nl/) is hét platform voor hoogwaardige geodata. Op PDOK kunnen gebruikers en specialisten geodata vinden en kunnen overheidsorganisaties hun geodata publiceren. PDOK verbindt vraag en aanbod met elkaar. Bij PDOK vind je open datasets van de overheid met actuele geo-informatie. De datasets gaan over allerlei verschillende thema’s, zoals de bodem, mobiliteit en grenzen. En zijn afkomstig van allerlei verschillende overheidsorganisaties, zoals het CBS, ministeries, Rijkswaterstaat en het Kadaster.  
 
 PDOK is in 2013 ontstaan en is een dienst van het Kadaster. Het Kadaster is de Nederlandse overheidsorganisatie die vastlegt wie welke rechten heeft op al het vastgoed in Nederland. En het Kadaster zorgt dat burgers, bedrijven en overheden gebruik kunnen maken van betrouwbare en actuele geo-informatie.  
+
+![De kracht van PDOK](<../assets/2201_PDOK open data portaal definitief.jpg>)
 
 ## Wat zijn OGC API’s? 
 
 - **Bekijk eerst dit filmpje: <https://www.youtube.com/watch?v=hNmZJ1itqfM>**
+
+![OGC APIs](../assets/ogc-api-youtube.png)
 
 Een OGC API is een gestandaardiseerde interface waarmee gebruikers en systemen geodata kunnen bevragen en bekijken via het internet. Een API, een Application Programming Interface, kan door mensen gebruikt worden om data op te vragen. Maar nog vaker worden API’s gebruikt door systemen (machines) om met elkaar te praten. Ontwikkelaars kunnen op die manier op een eenvoudige manier data van andere bronnen in hun eigen software integreren. Een API is dus een stopcontact voor data. Je hebt, in tegenstelling tot vroeger, geen specifieke kennis over geodata meer nodig om dit te kunnen.  
 
@@ -39,7 +44,9 @@ Een OGC API volgt de OGC API standaard. De standaard schrijft precies voor hoe d
 Een OGC API bestaat altijd uit dezelfde onderdelen. En de OGC API kent verschillende vormen om data beschikbaar te stellen. Welke vorm je kiest, is afhankelijk van wat je precies met de geodata wil gaan doen. En voor de organisatie die de data aanbiedt met een OGC API is het afhankelijk van hoe ze de data precies beschikbaar willen stellen. 
 
 ### OGC API onderdelen
-TO DO
+
+!!! warning "TO DO"
+
 ![De OGC API building blocks](../assets/ogc-api-building-blocks.png)
 
 | Onderdeel | Beschrijving | Beschikbaar bij PDOK? |
@@ -62,8 +69,6 @@ Developers weten hoe ze applicaties, zoals web viewers, makkelijk kunnen bouwen 
 En gebruikers weten altijd hoe ze de OGC API kunnen gebruiken en op welke manier ze de data krijgen, zodat ze niet voor verrassingen komen te staan. 
 
 Het gebruiken van een standaard bespaart zo heel veel tijd, geld en frustratie. 
-
-TO DO voorbeeld gestandaardiseerd vs. ongestandaardiseerd opnemen? 
 
 De beste standaarden zijn open standaarden. Open standaarden zijn standaarden die door iedereen gebruikt kunnen worden en waar iedereen die wil aan kan bijdragen.  
 

@@ -71,6 +71,10 @@ Hier vind je de verschillende visualisaties (stijlen) die aangeboden worden voor
 ### Tile Matrix Sets
 Hier vind je een beschrijving van de eerder genoemde Tile Matrix Sets: zoomniveaus en pixelgroottes van de tegels.
 
+![alt text](../assets/tilematrix.png)
+
+![alt text](../assets/tilematrixset.png)
+
 ## Samenvatting
 In dit onderdeel hebben we de volgende onderdelen van de OGC API besproken:
 

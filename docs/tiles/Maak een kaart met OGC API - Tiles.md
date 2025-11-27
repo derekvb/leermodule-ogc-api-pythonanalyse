@@ -28,7 +28,7 @@ We gaan eerst een voorbeeld bekijken.
 
 Dit is een web viewer die gemaakt is met de library MapLibre. Deze kaart maakt gebruik van de OGC API – Tiles van de BRT Achtergrondkaart: <https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1> 
 
-<img width="476" height="535" alt="brtachtergrondkaart" src="https://github.com/user-attachments/assets/d26c23cb-a1c3-480b-843e-168c22b3cb4b" />
+![BRT Achtergrondkaart](../assets/brtachtergrondkaart.png)
  
 !!! question "Vraag"
 
@@ -52,14 +52,10 @@ Je kunt nu zien dat deze web viewer de BRT Achtergrondkaart gebruikt, en meer sp
 !!! question "Vraag"
 
     Waar vind je de URL van de TileMatrixSet en de Style die gebruikt zijn in het voorbeeld?
-
-Dit is een visuele weergave van een Tile Matrix Set:
-  
-<img width="617" alt="tilematrix" src="https://github.com/user-attachments/assets/ab79fa47-77a6-4293-8926-fd05c783ed9d" />
  
 De URL is als volgt opgebouwd:
 
-<img width="617" height="149" alt="opbouw url" src="https://github.com/user-attachments/assets/97ac1a0c-a4e5-4133-986d-dd7abf70c6d9" />
+![De opbouw van de URL](../assets/urlopbouw.PNG)
 
 ### Bekijk nu de code van dichtbij
 
