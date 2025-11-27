@@ -1,3 +1,5 @@
+# Introductie OGC API - Features
+
 !!! abstract "Leerdoelen"
 
     Na het afronden van dit onderdeel:
@@ -11,8 +13,6 @@
     - Kun je een API GET request samenstellen met een bbox, pagination, CRS en feature-id.
     - Weet je hoe een web map werkt.
     - Kun je een OGC API - Features op een web map tonen en de gebruiker hiermee laten interacteren. 
-
-# Introductie OGC API - Features
 
 In dit onderdeel verkennen we OGC API - Features, bevragen we deze in de commandline en maken we een interactieve kaart. 
 

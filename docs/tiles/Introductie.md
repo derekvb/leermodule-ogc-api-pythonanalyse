@@ -1,3 +1,5 @@
+# Introductie OGC API - Tiles
+
 !!! abstract "Leerdoelen"
 
     Na het afronden van dit onderdeel:
@@ -11,8 +13,6 @@
         - Kun je een OGC API - Tiles op een web map tonen
         - Kun je een stijl kiezen voor een OGC API - Tiles op een web map
 
-# Introductie OGC API - Tiles
-
 In dit onderdeel verkennen we OGC API - Tiles en maken we een kaart. 
 
 OGC API - Tiles ontsluit kaarttegels, bedoeld voor het bekijken van geodata. Een online kaartapplicatie kan niet zonder achtergrondkaart en dit is waar OGC API - Tiles in uitblinkt. Performance, flexibiliteit en gebruiksgemak staan voorop. 
@@ -24,3 +24,4 @@ Eerst leer je met behulp van de API landing page wat de verschillende mogelijkhe
     - Internetbrowser
     - Code editor
     - MapLibre (JavaScript)
+
