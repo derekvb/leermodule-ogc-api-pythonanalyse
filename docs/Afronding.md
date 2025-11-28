@@ -34,7 +34,7 @@ In deze terugblik kijk je aan de hand van de leerdoelen terug op jouw stappen: w
 
 Gefeliciteerd! Je kent nu de mogelijkheden van geodata en je kunt nu werken met OGC API’s.
 
-Wij hopen dat je je nieuwe vaardigheden kunt toepassen. Heb je iets moois gemaakt met OGC API’s, dan zijn wij geïnteresseerd. Stuur ons je mooiste kaarten, viewers en andere toepassingen.
+Wij hopen dat je je nieuwe vaardigheden kunt toepassen. Heb je iets moois gemaakt met OGC API’s, dan zijn wij geïnteresseerd. Stuur ons je mooiste kaarten, viewers en andere toepassingen. 
 
 Wij zijn natuurlijk benieuwd naar hoe je de leermodule hebt ervaren. Zie voor het geven van feedback [Community](Community.md). 
 

@@ -25,6 +25,16 @@ Wat is ruimtelijke informatie, ook wel geo-informatie genoemd, en wat kun je erm
 
 ## Wat doet het Kadaster / PDOK? 
 
+- **Bekijk eerst dit filmpje:**
+
+<div class="video-wrapper">
+  <iframe src="https://hetkadaster.bbvms.com/p/kadaster_player_zakelijk/c/5673069.html"
+          title="PDOK promofilm"
+          frameborder="0"
+          allowfullscreen>
+  </iframe>
+</div>
+
 [PDOK](https://www.pdok.nl/) is hét platform voor hoogwaardige geodata. Op PDOK kunnen gebruikers en specialisten geodata vinden en kunnen overheidsorganisaties hun geodata publiceren. PDOK verbindt vraag en aanbod met elkaar. Bij PDOK vind je open datasets van de overheid met actuele geo-informatie. De datasets gaan over allerlei verschillende thema’s, zoals de bodem, mobiliteit en grenzen. En zijn afkomstig van allerlei verschillende overheidsorganisaties, zoals het CBS, ministeries, Rijkswaterstaat en het Kadaster.  
 
 PDOK is in 2013 ontstaan en is een dienst van het Kadaster. Het Kadaster is de Nederlandse overheidsorganisatie die vastlegt wie welke rechten heeft op al het vastgoed in Nederland. En het Kadaster zorgt dat burgers, bedrijven en overheden gebruik kunnen maken van betrouwbare en actuele geo-informatie.  
@@ -33,9 +43,16 @@ PDOK is in 2013 ontstaan en is een dienst van het Kadaster. Het Kadaster is de N
 
 ## Wat zijn OGC API’s? 
 
-- **Bekijk eerst dit filmpje: <https://www.youtube.com/watch?v=hNmZJ1itqfM>**
+- **Bekijk eerst dit filmpje:**
 
-![OGC APIs](../assets/ogc-api-youtube.png)
+<div class="video-wrapper">
+  <iframe src="https://www.youtube-nocookie.com/embed/hNmZJ1itqfM"
+          title="OGC APIs"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+  </iframe>
+</div>
 
 Een OGC API is een gestandaardiseerde interface waarmee gebruikers en systemen geodata kunnen bevragen en bekijken via het internet. Een API, een Application Programming Interface, kan door mensen gebruikt worden om data op te vragen. Maar nog vaker worden API’s gebruikt door systemen (machines) om met elkaar te praten. Ontwikkelaars kunnen op die manier op een eenvoudige manier data van andere bronnen in hun eigen software integreren. Een API is dus een stopcontact voor data. Je hebt, in tegenstelling tot vroeger, geen specifieke kennis over geodata meer nodig om dit te kunnen.  
 
