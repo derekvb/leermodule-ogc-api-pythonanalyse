@@ -23,8 +23,10 @@ Leerdoelen:
 
 We gaan eerst een voorbeeld bekijken. 
 
-- **Bekijk** [../voorbeelden/tiles/index.html](../voorbeelden/tiles/index.html)
-- **Bekijk de kaart zelf, zoom eens in en uit**
+**:arrow_right: Bekijk** [../voorbeelden/tiles/index.html](../voorbeelden/tiles/index.html)
+
+**:arrow_right: Bekijk de kaart zelf, zoom eens in en uit**
+
 
 Dit is een web viewer die gemaakt is met de library MapLibre. Deze kaart maakt gebruik van de OGC API – Tiles van de BRT Achtergrondkaart: <https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1> 
 
@@ -34,20 +36,24 @@ Dit is een web viewer die gemaakt is met de library MapLibre. Deze kaart maakt g
 
     Wat verandert er als je in- en uitzoomt op de kaart? 
 
-- **Open de developer tools in je browser.** 
-- **Refresh de pagina**
-- **Open het Netwerk (Network) tabblad**
-- **Bekijk de requests die verschijnen in het Netwerktabblad**
+**:arrow_right: Open de developer tools in je browser.** 
+
+**:arrow_right: Refresh de pagina**
+
+**:arrow_right: Open het Netwerk (Network) tabblad**
+
+**:arrow_right: Bekijk de requests die verschijnen in het Netwerktabblad**
+
 
 Merk op dat er onder andere een `main.js` en `https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1/styles/standaard__webmercatorquad?f=json` worden ingeladen.
 
-- **Zoom eens in en uit**
+**:arrow_right: Zoom eens in en uit**
 
 Merk op dat er nu veel bestanden worden ingeladen, bijvoorbeeld `262?f=mvt`. Dit bestand is 1 tile (kaarttegel). De volledige URL van deze tile is: <https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1/tiles/WebMercatorQuad/9/168/262?f=mvt> 
 
 Je kunt nu zien dat deze web viewer de BRT Achtergrondkaart gebruikt, en meer specifiek de WebMercatorQuad TileMatrixSet. Dat zie je aan de URL’s van de tiles. En je ziet dat de standaard style wordt gebruikt voor deze tilematrixset. Dat zie je aan de style URL die na `main.js` werd ingeladen: <https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1/styles/standaard__webmercatorquad?f=json>
 
-- **Zoek deze TileMatrixSet en Style ook op via de landing page in de browser:** <https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1> 
+**:arrow_right: Zoek deze TileMatrixSet en Style ook op via de landing page in de browser:** <https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1> 
 
 !!! question "Vraag"
 
@@ -61,27 +67,31 @@ De URL is als volgt opgebouwd:
 
 Maak gebruik van een code editor of IDE naar keuze om code te bekijken en uit te voeren. Hieronder een uitleg voor VSCode, maar je kunt natuurlijk zelf een keuze maken. 
 
-- **Fork de Git repository**
-- **Clone de Git repository**
-- **Open de repository**
+**:arrow_right: Fork de Git repository**
+
+**:arrow_right: Clone de Git repository**
+
+**:arrow_right: Open de repository**
 
 Laten we deze code runnen zodat we de applicatie eerst in de browser kunnen bekijken:
 
-- **Start lokaal een web server, bijvoorbeeld met python:**
+**:arrow_right: Start lokaal een web server, bijvoorbeeld met python:**
 
 ```
 > python -m http.server
 Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 ```
-- **Bekijk nu** [../voorbeelden/tiles/index.html](../voorbeelden/tiles/index.html) **in de browser**
+**:arrow_right: Bekijk nu** [../voorbeelden/tiles/index.html](../voorbeelden/tiles/index.html) **in de browser**
 
 ![voorbeeld van kaart die met maplibre is gemaakt](../assets/msedge_gjEJAEdbND.png)
 
 Laten we nu eens de code bekijken in een editor:
 
-- **Bekijk** `..\voorbeelden\tiles\index.html`
-- **Bekijk** `..\voorbeelden\tiles\main.js`
-- **Bekijk** <https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1/styles/standaard__webmercatorquad?f=json>
+**:arrow_right: Bekijk** `..\voorbeelden\tiles\index.html`
+
+**:arrow_right: Bekijk** `..\voorbeelden\tiles\main.js`
+
+**:arrow_right: Bekijk** <https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1/styles/standaard__webmercatorquad?f=json>
 
 Als het goed is, zie je in de code `index.html` een `div` met als id `map`.
 
@@ -97,18 +107,18 @@ In `main.js` zie je dat er bij `container` dat er naar diezelfde `map` wordt ver
 Merk op dat je de URL naar de tegels zelf niet ziet in `main.js`. Die URL wordt namelijk in de `style json` aangeroepen. De `main.js` roept de `style json` aan en die roept vervolgens de bron van van de tiles aan. De `style json`  bepaalt ook hoe die tiles weergegeven moeten worden. 
 De bron van de tiles is in dit geval dus <https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1/tiles/WebMercatorQuad/{z}/{y}/{x}?f=mvt>
 
-- **Zoek in de** `style json` **de URL van de tiles op.**
+**:arrow_right: Zoek in de** `style json` **de URL van de tiles op.**
 
 !!! note "Wil je hier meer over weten?"
 
     Kijk voor een deep dive op <https://ogcapi-workshop.ogc.org/api-deep-dive/tiles/> 
 
-- **Bekijk nog eens** de `style json`: <https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1/styles/standaard__webmercatorquad?f=json>
+**:arrow_right: Bekijk nog eens** de `style json`: <https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1/styles/standaard__webmercatorquad?f=json>
 
 
 Dit is een erg omvangrijke stijl. Hoe is dit opgebouwd? Dit is een json waarin de bron gedefinieerd wordt en de layers die daar in zitten en hoe die layers getoond moeten worden (kleuren, diktes, etc.).
 
-- **Bekijk nog eens** `main.js`
+**:arrow_right: Bekijk nog eens** `main.js`
 
 In dit geval staat de `style json` op een externe locatie, maar het kan ook een bestand op je eigen server zijn. 
 In dit geval is de `style json` beschikbaar gesteld door PDOK, maar je kunt ook zelf `style json` bestanden maken. Het voorbeeld is een erg groot stijlbestand, maar er zijn ook simpelere stijlen mogelijk.  

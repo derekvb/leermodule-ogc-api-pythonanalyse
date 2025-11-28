@@ -4,17 +4,17 @@ Laten we eerst in de browser verkennen wat je allemaal met OGC API - Features ku
 
 ## api.pdok.nl
 
-- **Ga naar <https://api.pdok.nl>**
+**:arrow_right: Ga naar <https://api.pdok.nl>**
 
 Je vind hier een overzicht van alle API’s van PDOK.  
 
-- **Scan de hele pagina eens.**
+**:arrow_right: Scan de hele pagina eens.**
 
 !!! question "Vraag"
 
     Zijn dit allemaal OGC API’s of ook andere soorten API’s?
 
-- **Zoek de volgende API op en klik deze aan: *Basisregistratie Grootschalige Topografie (OGC API)***
+**:arrow_right: Zoek de volgende API op en klik deze aan: *Basisregistratie Grootschalige Topografie (OGC API)***
 
 ## Landing page
 
@@ -26,7 +26,7 @@ De landing page is een voor mensen leesbare beschrijving en toegangspunt van de 
 
     Waar vind je de beschrijving die voor machines is bedoeld? Bekijk deze ook eens.
 
-- **En ga daarna terug naar de HTML-weergave (de leesbare variant)**
+**:arrow_right: En ga daarna terug naar de HTML-weergave (de leesbare variant)**
 
 Een landing page bevat een beschrijving van de dataset met eventueel verwijzingen naar andere bronnen, de trefwoorden en metadata. 
 

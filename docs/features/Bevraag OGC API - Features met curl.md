@@ -8,7 +8,7 @@ In dit deel stel je met behulp van de OpenAPI specification GET requests samen o
 
 ## Voorbereiding
 
-- **Open een commandline / terminal venster.** 
+**:arrow_right: Open een commandline / terminal venster.** 
 
 !!! warning "Waarschuwing"
 
@@ -16,7 +16,7 @@ In dit deel stel je met behulp van de OpenAPI specification GET requests samen o
 
 Met de OpenAPI specification pagina kun je heel makkelijk commando's voor `curl` samenstellen. 
 
-- **Ga naar de OpenAPI specification van de BGT.**
+**:arrow_right: Ga naar de OpenAPI specification van de BGT.**
 
 Weet je niet meer waar je die kunt vinden? Kijk dan even in één van de vorige onderdelen. 
 
@@ -26,12 +26,13 @@ Weet je niet meer waar je die kunt vinden? Kijk dan even in één van de vorige 
 
 Laten we beginnen met een simpele vraag. We vragen eerst de `OpenAPI specification` zelf op. 
 
-- **Klap** 'GET `/api` This document' **open**:
+**:arrow_right: Klap** 'GET `/api` This document' **open**:
 
 ![GET /api This document](../assets/JIOrOGF6Mz.png)
 
-- **Klik op *Try it out***
-- **Klik op *Execute***
+**:arrow_right: Klik op *Try it out***
+
+**:arrow_right: Klik op *Execute***
 
 Je krijgt nu het `curl` commando dat is afgevuurd en het resultaat (response) te zien:
 
@@ -45,7 +46,7 @@ We kunnen het `curl` commando kopiëren en zelf uitvoeren in de command line.
 
     Pas voor de Windows commandline (`cmd.exe`) de kant-en-klare `curl` commando's aan: zet alles op één regel en verander de 'enkele quotes' in "dubbele quotes". Anders zullen de voorbeelden niet werken. 
 
-- **Kopieer het** `curl` **commando en plak het in de commandline**
+**:arrow_right: Kopieer het** `curl` **commando en plak het in de commandline**
 
 Voor Windows:
 
@@ -55,7 +56,7 @@ curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/api?f=json" -H 'accept: */*'
 
 ![curl commando in cmd](../assets/WindowsTerminal_cZQqtp6rFq.png)
 
-- **Druk op Enter en bekijk het resultaat:**
+**:arrow_right: Druk op Enter en bekijk het resultaat:**
 
 ![resultaat in cmd](../assets/WindowsTerminal_pxSf6UnL4F.png)
 
@@ -67,8 +68,9 @@ We gaan met behulp van `curl` informatie over collecties opvragen.
 
 Stel dat je wilt weten welke collecties er allemaal zijn. Je kunt dan de `GET /collections` call gebruiken. 
 
-- **Klap** 'GET `/collections`' **open, klik op *Try it out* en klik op *Execute*.** 
-- **Kopieer het commando en voer het uit in de commandline.** 
+**:arrow_right: Klap** 'GET `/collections`' **open, klik op *Try it out* en klik op *Execute*.**
+
+**:arrow_right: Kopieer het commando en voer het uit in de commandline.** 
 
 Voor Windows:
 
@@ -76,7 +78,7 @@ Voor Windows:
 curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections?f=json" -H 'accept: */*'
 ```
 
-- **Bekijk het resultaat.** 
+**:arrow_right: Bekijk het resultaat.** 
 
 Je krijgt een overzicht te zien van alle collecties in deze OGC API - Features. 
 
@@ -94,7 +96,7 @@ Voor Windows:
 curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor?f=json" -H 'accept: */*'
 ```
 
-- **Voer dit uit en bekijk het resultaat.**
+**:arrow_right: Voer dit uit en bekijk het resultaat.**
 
 !!! question "Vraag"
 
@@ -127,7 +129,7 @@ Voor Windows:
     curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor/schema?f=json" -H 'accept: */*'
     ```
 
-- **Voer dit uit en bekijk het resultaat.**
+**:arrow_right: Voer dit uit en bekijk het resultaat.**
 
 !!! question "Vraag"
     In welke attributen vind je een datum/tijd? 
@@ -145,7 +147,7 @@ Voor Windows:
 curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor/items?f=json" -H 'accept: */*'
 ```
 
-- **Voer dit uit en bekijk het resultaat.**
+**:arrow_right: Voer dit uit en bekijk het resultaat.**
 
 !!! question "Vraag"
     Hoeveel items heb je gekregen? 
@@ -162,7 +164,7 @@ Er is standaard een limiet op het aantal items. We kunnen ook zelf expliciet een
     curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor/items?limit=100&f=json" -H 'accept: */*'
     ```
 
-- **Voer dit uit en bekijk het resultaat.**
+**:arrow_right: Voer dit uit en bekijk het resultaat.**
 
 ### Vraag één specifiek item op
 
@@ -173,7 +175,7 @@ Voor Windows:
 curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor/items/7022ff26-12e4-5dc8-9a33-56db2da7e607?f=json" -H 'accept: */*'
 ```
 
-- **Voer dit uit en bekijk het resultaat.**
+**:arrow_right: Voer dit uit en bekijk het resultaat.**
 
 ### Vraag items op binnen een bounding box
 
@@ -186,8 +188,9 @@ Voor Windows:
 curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor/items?bbox=4.458132,51.922276,4.478388,51.926696&f=json" -H 'accept: */*'
 ```
 
-- **Zoek zelf de coördinaten op van de bounding box van jouw woonplaats met behulp van** <http://bboxfinder.com>
-- **En vraag de spoorlijnen op binnen die bbox met behulp van** `curl`.
+**:arrow_right: Zoek zelf de coördinaten op van de bounding box van jouw woonplaats met behulp van** <http://bboxfinder.com>
+
+**:arrow_right: En vraag de spoorlijnen op binnen die bbox met behulp van** `curl`.
 
 ### Vraag items op in een bepaald CRS
 

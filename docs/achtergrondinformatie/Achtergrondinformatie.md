@@ -25,7 +25,7 @@ Wat is ruimtelijke informatie, ook wel geo-informatie genoemd, en wat kun je erm
 
 ## Wat doet het Kadaster / PDOK? 
 
-- **Bekijk eerst dit filmpje:**
+**:arrow_right: Bekijk eerst dit filmpje:**
 
 <div class="video-wrapper">
   <iframe src="https://hetkadaster.bbvms.com/p/kadaster_player_zakelijk/c/5673069.html"
@@ -43,7 +43,7 @@ PDOK is in 2013 ontstaan en is een dienst van het Kadaster. Het Kadaster is de N
 
 ## Wat zijn OGC API’s? 
 
-- **Bekijk eerst dit filmpje:**
+**:arrow_right: Bekijk eerst dit filmpje:**
 
 <div class="video-wrapper">
   <iframe src="https://www.youtube-nocookie.com/embed/hNmZJ1itqfM"
