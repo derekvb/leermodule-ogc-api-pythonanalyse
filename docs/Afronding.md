@@ -1,12 +1,10 @@
 # Afronding
 
-Je hebt nu deze leermodule afgerond. Je kent nu de mogelijkheden van geodata en je kunt nu werken met OGC API’s.
-
-Wij hopen dat je je nieuwe vaardigheden kunt toepassen. Heb je iets moois gemaakt met OGC API’s, dan zijn wij geïnteresseerd. Stuur ons je mooiste kaarten, viewers en andere toepassingen.
+Je hebt nu deze leermodule doorlopen. Voordat we helemaal afronden, is het belang om even stil te staan bij wat je gedaan en geleerd hebt. 
 
 ## Terugblik
 
-!!! warning "TO DO"
+In deze terugblik kijk je aan de hand van de leerdoelen terug op jouw stappen: wat ging goed, wat vond je juist lastig en wat is belangrijkste inzicht? Dit is het moment om even te reflecteren. Dit helpt je om te ontdekken wat je hebt geleerd en hoe je dit kunt toepassen en op welke vlakken je je nog verder kunt ontwikkelen. 
 
 !!! abstract "Leerdoelen"
 
@@ -29,17 +27,16 @@ Wij hopen dat je je nieuwe vaardigheden kunt toepassen. Heb je iets moois gemaak
 
 	Kortom: je kunt straks OGC API's gebruiken en implementeren. 
 
-## Feedback en bijdragen
+!!! warning "TO DO"
 
-Wij zijn natuurlijk benieuwd naar hoe je deze leermodule hebt ervaren. Heb je suggesties of verbeteringen op deze leermodule, laat het ons dan weten.
+    Reflecteren verder aanvullen
 
-Wij willen graag dat deze leermodule door de community wordt door ontwikkeld. Wij staan open voor issues en pull requests. Je mag ons natuurlijk ook een mail sturen.
 
-## Blijf in contact
+Gefeliciteerd! Je kent nu de mogelijkheden van geodata en je kunt nu werken met OGC API’s.
 
-Je kunt in contact komen met de geocommunity via het [Geoforum](https://geoforum.nl/). Hier kun je vragen stellen over geodata en helpen mensen elkaar. Ook wordt er nieuws geplaatst.
+Wij hopen dat je je nieuwe vaardigheden kunt toepassen. Heb je iets moois gemaakt met OGC API’s, dan zijn wij geïnteresseerd. Stuur ons je mooiste kaarten, viewers en andere toepassingen.
 
-Op de hoogte blijven van nieuws en nieuwe datasets van PDOK? Abonneer je dan op onze [Attenderingsservice](https://www.pdok.nl/attenderingsservice).
+Wij zijn natuurlijk benieuwd naar hoe je de leermodule hebt ervaren. Zie voor het geven van feedback [Community](Community.md). 
 
 ## Verder aan de slag
 
