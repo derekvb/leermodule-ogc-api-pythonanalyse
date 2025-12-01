@@ -12,7 +12,7 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
-    - navigation.tabs
+  #  - navigation.tabs
     - navigation.footer
     - search.suggest
     - search.highlight
