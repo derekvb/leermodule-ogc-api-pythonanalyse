@@ -25,6 +25,8 @@ Wij zijn benieuwd naar wat je hebt gemaakt met de OGC API's. Wij zijn altijd op 
 
 Je kunt in contact komen met de geocommunity via het [Geoforum](https://geoforum.nl/). Hier kun je vragen stellen over geodata en helpen mensen elkaar. Ook plaatst PDOK hier nieuwsberichten, bijvoorbeeld over nieuwe datasets en andere ontwikkelingen. 
 
+![Het Geoforum](assets/Geoforum.png)
+
 Wil je per mail op de hoogte blijven van nieuws en nieuwe datasets van PDOK? Abonneer je dan op onze [Attenderingsservice](https://www.pdok.nl/attenderingsservice).
 
 ## Events
