@@ -1,27 +1,10 @@
-# Maak een kaart met OGC API – Tiles
-We gaan zelf een kaart maken met behulp van de library MapLibre. Dit is een JavaScript library voor het maken van interactieve web maps. Het doel is niet om MapLibre zelf te leren; we gebruiken MapLibre alleen om de werking van OGC API aan te tonen. 
+# Analyseer een voorbeeldkaart
 
-Je maakt deze kaart aan de hand van een casus. Eerst introduceren we deze casus. Daarna bekijken we een voorbeeld. Hierna maak je je eigen kaart. En tot slot voeg je een OGC API - Tiles toe aan jouw eigen kaart. 
+Zojuist heb je met behulp van de landing page verkend wat je allemaal met OGC API - Tiles kunt doen. We bekijken nu een voorbeeld web map die gemaakt is met behulp van OGC API - Tiles. Aan de hand hiervan ontdek je hoe een web map werkt en hoe de componenten van OGC API - Tiles met elkaar samenwerken. 
 
-## Introductie casus
-Je gaat een kaart maken van jouw buurt die inzicht geeft in de kwaliteit van de leefomgeving. Hoe is het in jouw buurt of wijk bijvoorbeeld gesteld met het aantal bomen? Zijn er voldoende scholen in de buurt? 
-Met data kun je inzicht geven in dit soort vraagstukken. PDOK ontsluit dit soort data middels OGC API's. En specialisten en ontwikkelaars kunnen met behulp van die API's kaarten en viewers maken. 
+## Bekijk het voorbeeld in een browser
 
-In deze casus nemen we jou stap voor stap mee:
-
-1. Bekijk een voorbeeldkaart
-2. Voeg een achtergrondkaart toe aan jouw kaart (OGC API - Tiles)
-3. Vind geschikte data (OGC API - Features)
-4. Voeg OGC API - Features toe aan jouw kaart
-5. Evalueer het eindresultaat
-
-## Bekijk een voorbeeld
-Leerdoelen: 
-
-- Je leert uit welke componenten een web map bestaat en hoe die samenwerken. 
-- Je leert uit welke componenten een OGC API – Tiles bestaat en hoe die componenten samenwerken. 
-
-We gaan eerst een voorbeeld bekijken. 
+We bekijken nu eerst de voorbeeldwebmap in een webbrowser. 
 
 **:arrow_right: Bekijk** [../voorbeelden/tiles/index.html](../voorbeelden/tiles/index.html)
 
@@ -63,9 +46,9 @@ De URL is als volgt opgebouwd:
 
 ![De opbouw van de URL](../assets/urlopbouw.PNG)
 
-### Bekijk nu de code van dichtbij
+## Bekijk het voorbeeld in een code-editor
 
-Maak gebruik van een code editor of IDE naar keuze om code te bekijken en uit te voeren. Hieronder een uitleg voor VSCode, maar je kunt natuurlijk zelf een keuze maken. 
+We gaan nu de code van dichtbij bekijken. Maak gebruik van een code editor of IDE naar keuze om code te bekijken en uit te voeren. Hieronder een uitleg voor VSCode, maar je kunt natuurlijk zelf een keuze maken. 
 
 **:arrow_right: Fork de Git repository**
 
@@ -121,11 +104,8 @@ Dit is een erg omvangrijke stijl. Hoe is dit opgebouwd? Dit is een json waarin d
 **:arrow_right: Bekijk nog eens** `main.js`
 
 In dit geval staat de `style json` op een externe locatie, maar het kan ook een bestand op je eigen server zijn. 
-In dit geval is de `style json` beschikbaar gesteld door PDOK, maar je kunt ook zelf `style json` bestanden maken. Het voorbeeld is een erg groot stijlbestand, maar er zijn ook simpelere stijlen mogelijk.  
+In dit geval is de `style json` beschikbaar gesteld door PDOK, maar je kunt ook zelf `style json` bestanden maken. Het voorbeeld is een erg groot stijlbestand, maar er zijn ook simpelere stijlen mogelijk.
 
-## Maak een kaart 
-We gaan nu onze eigen web map met een OGC API Tiles achtergrondkaart (BRT) maken, aan de hand van het voorbeeld. 
+## Samenvatting
 
 !!! warning "TO DO"
-
-
