@@ -51,7 +51,7 @@ We kunnen het `curl` commando kopiëren en zelf uitvoeren in de command line.
 Voor Windows:
 
 ```
-curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/api?f=json" -H 'accept: */*'
+curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/api?f=json" -H "accept: */*"
 ```
 
 ![curl commando in cmd](../assets/WindowsTerminal_cZQqtp6rFq.png)
@@ -75,12 +75,24 @@ Stel dat je wilt weten welke collecties er allemaal zijn. Je kunt dan de `GET /c
 Voor Windows:
 
 ```
-curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections?f=json" -H 'accept: */*'
+curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections?f=json" -H "accept: */*"
 ```
 
 **:arrow_right: Bekijk het resultaat.** 
 
 Je krijgt een overzicht te zien van alle collecties in deze OGC API - Features. 
+
+Response body:
+```
+{
+  "links": [
+    ...
+  ],
+  "collections": [
+    ...
+  ]
+}
+```
 
 !!! tip 
 
@@ -88,15 +100,33 @@ Je krijgt een overzicht te zien van alle collecties in deze OGC API - Features.
 
 ### Informatie over één specifieke collectie
 
-Je kunt ook de informatie van een specifieke collectie opvragen. Laten we als voorbeeld de 'spoor' collectie nemen. 
+Je kunt ook de informatie van een specifieke collectie opvragen. Laten we als voorbeeld de ['spoor' collectie](https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor) nemen. 
+
+![een spoorlijn](../assets/spoorcollectie.jpg)
 
 Voor Windows:
 
 ```
-curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor?f=json" -H 'accept: */*'
+curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor?f=json" -H "accept: */*"
 ```
 
 **:arrow_right: Voer dit uit en bekijk het resultaat.**
+
+Response body:
+```
+{
+ "id": "spoor",
+ "title": "Spoor (SPR)",
+ "description": "De as van het spoor, dat wil zeggen het midden van twee stalen staven op een onderling vaste afstand, waarover trein, tram, of sneltram rijdt.",
+ "keywords": [
+  ...
+    ],
+ "extent": {
+    ...
+    }
+ ...
+}
+```
 
 !!! question "Vraag"
 
@@ -122,12 +152,29 @@ Soms wil je weten welke kolommen een dataset heeft, en wat die kolommen precies 
 
     Hoe kun je het schema bekijken? 
 
-Voor Windows:
-
 ??? success "Bekijk het antwoord"
+    Voor Windows:
+    
     ```
-    curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor/schema?f=json" -H 'accept: */*'
+    curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor/schema?f=json" -H "accept: */*"
     ```
+
+    Response body:
+
+        {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor/schema",
+        "title": "Spoor (SPR)",
+        "description": "De as van het spoor, dat wil zeggen het midden van twee stalen staven op een onderling vaste afstand, waarover trein, tram, of sneltram rijdt.",
+        "type": "object",
+        "required": [
+        "id",
+        "version"
+        ],
+        "properties": {
+            "id"
+            ...
+        }
 
 **:arrow_right: Voer dit uit en bekijk het resultaat.**
 
@@ -144,7 +191,7 @@ Door `items` toe te voegen aan de call voor een specifieke collectie, kunnen we 
 
 Voor Windows:
 ```
-curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor/items?f=json" -H 'accept: */*'
+curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor/items?f=json" -H "accept: */*"
 ```
 
 **:arrow_right: Voer dit uit en bekijk het resultaat.**
@@ -160,8 +207,9 @@ Er is standaard een limiet op het aantal items. We kunnen ook zelf expliciet een
 
 ??? success "Bekijk het antwoord"
     Voor Windows:
+
     ```
-    curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor/items?limit=100&f=json" -H 'accept: */*'
+    curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor/items?limit=100&f=json" -H "accept: */*"
     ```
 
 **:arrow_right: Voer dit uit en bekijk het resultaat.**
@@ -172,20 +220,34 @@ Stel dat je geïnteresseerd bent in één specifiek item, dan kun je die door mi
 
 Voor Windows:
 ```
-curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor/items/7022ff26-12e4-5dc8-9a33-56db2da7e607?f=json" -H 'accept: */*'
+curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor/items/7022ff26-12e4-5dc8-9a33-56db2da7e607?f=json" -H "accept: */*"
 ```
 
 **:arrow_right: Voer dit uit en bekijk het resultaat.**
+
+Response body:
+```
+{
+    "type": "Feature",
+    "properties": {
+        ...
+    },
+    "geometry": {
+        ...
+    }
+... 
+}
+```
 
 ### Vraag items op binnen een bounding box
 
 Laten we het ruimtelijk maken. Met een extra parameter kun je items opvragen binnen een specifiek gebied: een bounding box (ook wel `bbox`). Je vraagt dit gebied op met het x- en y-coördinaat van de linkeronderhoek, gevolgd door het x- en y-coördinaat van de rechterbovenhoek. Bijvoorbeeld: `4.458132,51.922276,4.478388,51.926696`
 
-![alt text](../assets/qgis-bin_rNAEoh6ooV.png)
+![een bounding box op een kaart met coördinaten](../assets/qgis-bin_rNAEoh6ooV.png)
 
 Voor Windows:
 ```
-curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor/items?bbox=4.458132,51.922276,4.478388,51.926696&f=json" -H 'accept: */*'
+curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor/items?bbox=4.458132,51.922276,4.478388,51.926696&f=json" -H "accept: */*"
 ```
 
 **:arrow_right: Zoek zelf de coördinaten op van de bounding box van jouw woonplaats met behulp van** <http://bboxfinder.com>
@@ -194,4 +256,53 @@ curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor/items?bbox=4.
 
 ### Vraag items op in een bepaald CRS
 
-!!! warning "TO DO"
+Standaard worden de features uitgeleverd in CRS84 coördinaatreferentiesysteem (CRS). Je kunt de features ook in andere CRS'en opvragen. Dit is handig wanneer je de data wilt combineren met datasets met een ander CRS, of voor projectie op een kaart. Met een parameter kun je aangeven in welk CRS je de data wilt terugkrijgen. 
+
+**:arrow_right: Vraag op in welke CRS'en de spoorcollectie beschikbaar is**
+
+??? success "Bekijk het antwoord"
+
+    Voor Windows:
+
+    ```
+    curl - X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/put?f=json"  -H "accept: */*"
+    ```
+
+    Response body:
+
+        ...
+        "crs": [
+        "http://www.opengis.net/def/crs/OGC/1.3/CRS84",
+        "http://www.opengis.net/def/crs/EPSG/0/28992",
+        "http://www.opengis.net/def/crs/EPSG/0/3857",
+        "http://www.opengis.net/def/crs/EPSG/0/4258"
+        ]
+        ...
+
+**:arrow_right: Vraag de items op in de RD/Amersfoort CRS**
+
+Voeg de parameter toe voor het crs en de URL van RD/Amersfoort toe. Kijk in de de API specification als je er niet meteen uitkomt. 
+
+??? success "Bekijk het antwoord"
+
+    Voor Windows:
+
+    ```
+    curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor/items?crs=http://www.opengis.net/def/crs/EPSG/0/28992&f=json"  -H "accept: */*"
+    ```
+
+    Response body:
+
+        ...
+        {"type":"FeatureCollection",
+        ...
+        "features":[
+            ...
+        ]
+        ...
+        }
+        ...
+
+## Resumé
+
+Je hebt in de oefeningen hierboven de OpenAPI specificatie opgevraagd waarmee je zelf API calls kunt samenstellen en voorbeelden van calls en responses kunt bekijken. Daarna heb je informatie over collecties opgevraagd en de items in die collecties opgevraagd. En dat allemaal in de commandline. Je kunt je voorstellen dat je dit soort calls in elk soort applicatie zou kunnen integreren. Hopelijk geeft dit onderdeel een goede basis voor het volgende onderdeel: maak een interactieve kaart met OGC API - Features. 
