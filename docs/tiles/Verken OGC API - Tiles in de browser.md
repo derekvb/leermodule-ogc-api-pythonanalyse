@@ -76,12 +76,12 @@ Hier vind je een beschrijving van de eerder genoemde Tile Matrix Sets: zoomnivea
 ![alt text](../assets/tilematrixset.png)
 
 ## Samenvatting
-In dit onderdeel hebben we de volgende onderdelen van de OGC API besproken:
+In dit onderdeel heb je in de browser de landing page (HTML weergave) van een OGC API verkend. Hopelijk heb je hiermee een beeld van wat een OGC API allemaal kan en hoe je snel kunt zien wat voor data er in een OGC API zit, specifiek voor OGC API - Tiles. We deden dat aan de hand van de dataset Basisregistratie Grootschalige Topografie. We hebben de volgende onderdelen van de OGC API besproken:
 
 | Onderdeel | Toelichting |
 | --------- | ----------- |
 | OpenAPI specification | Swagger UI die de mogelijkheden van de API toont. |
-| Conformance | Aan welke standaarden de API voldoet. |
+| Conformance | Overzicht van de standaarden waaraan deze API voldoet. |
 | Tiles | URL's van de tilesets van deze API en de verschillende projecties waarin de dataset wordt aangeboden |
 | Styles | URL's en voorbeeldweergaves van de stijlen die PDOK beschikbaar stelt. | 
 | Tile Matrix Sets | Beschrijving van de Tile Matrix Sets: zoomniveaus en pixelgroottes van de tegels. 

@@ -7,7 +7,7 @@ Je maakt deze kaart aan de hand van een casus. Eerst introduceren we deze casus.
 
 !!! warning "TO DO"
 
-Je gaat een kaart maken van jouw buurt die inzicht geeft in de kwaliteit van de leefomgeving. Hoe is het in jouw buurt of wijk bijvoorbeeld gesteld met het aantal bomen? Zijn er voldoende scholen in de buurt? 
+Je gaat een kaart maken die inzicht geeft in de kwaliteit van de leefomgeving in jouw buurt. Hoe is het in jouw buurt of wijk bijvoorbeeld gesteld met het aantal bomen? Zijn er voldoende scholen in de buurt? 
 Met data kun je inzicht geven in dit soort vraagstukken. PDOK ontsluit dit soort data middels OGC API's. En specialisten en ontwikkelaars kunnen met behulp van die API's kaarten en viewers maken. 
 
 In deze casus nemen we jou stap voor stap mee:
@@ -22,4 +22,6 @@ We gaan nu onze eigen web map met een OGC API - Tiles achtergrondkaart (BRT) mak
 
 !!! warning "TO DO"
 
+## Samenvatting
 
+!!! warning "TO DO"
