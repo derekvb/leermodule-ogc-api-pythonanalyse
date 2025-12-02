@@ -8,12 +8,12 @@ Wij zijn natuurlijk benieuwd naar hoe je deze leermodule hebt ervaren. Heb je na
 
 Wij willen graag samen met jullie een community vormen om deze leermodule door te ontwikkelen. Heb jij de leermodule afgerond of ben jij een data-specialist, geo-specialist of docent/trainer met verstand van OGC API's? En lijkt het je leuk om samen met PDOK de leermodule naar een hoger plan te tillen? Doe met ons mee:
 
-- Spread the word! Deel de leermodule met anderen
-- Ontwikkel met ons mee! 
-    - Verdiep de leermodule met uitbreidingen en verbeteringen op de bestaande onderdelen
-    - Verbreed de leermodule met extra onderdelen
-    - Maak extra voorbeelden
-    - Verbeter fouten
+- :material-bullhorn-variant: **Spread the word! Deel de leermodule met anderen**
+- :material-laptop: **Ontwikkel met ons mee:**
+- :material-plus-box-outline: Verdiep de leermodule met uitbreidingen en verbeteringen op de bestaande onderdelen
+- :material-plus-box-multiple: Verbreed de leermodule met extra onderdelen
+- :material-file: Maak extra voorbeelden
+- :material-alert: Verbeter fouten
 
 **Bouw met ons mee** aan de community en [neem contact met ons op](https://formulieren.kadaster.nl/contact-pdok)! Ook staan we open voor **[pull requests](https://github.com/PDOK/leermodule-ogc-api/pulls)**. 
 
