@@ -22,6 +22,6 @@ Eerst leer je met behulp van de API landing page wat de verschillende mogelijkhe
 !!! info "Je gaat werken met:"
 
     - Internetbrowser
-    - Code editor
+    - Code-editor
     - MapLibre (JavaScript)
 

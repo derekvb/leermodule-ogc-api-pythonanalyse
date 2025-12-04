@@ -25,5 +25,5 @@ Eerst leer je met behulp van de API landing page wat de verschillende mogelijkhe
     - Internetbrowser
     - Commandline 
         - Curl
-    - Code editor
+    - Code-editor
     - MapLibre (JavaScript)

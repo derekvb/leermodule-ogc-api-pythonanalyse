@@ -1,6 +1,6 @@
 # Analyseer een voorbeeldkaart
 
-Zojuist heb je met behulp van de landing page verkend wat je allemaal met OGC API - Tiles kunt doen. We bekijken nu een voorbeeld webmap die gemaakt is met behulp van OGC API - Tiles. Aan de hand hiervan ontdek je hoe een webmap werkt en hoe de componenten van OGC API - Tiles met elkaar samenwerken. 
+Zojuist heb je met behulp van de landing page verkend wat je allemaal met OGC API - Tiles kunt doen. We bekijken nu een voorbeeldwebmap die gemaakt is met behulp van OGC API - Tiles. Aan de hand hiervan ontdek je hoe een webmap werkt en hoe de componenten van OGC API - Tiles met elkaar samenwerken. 
 
 ## Bekijk het voorbeeld in een browser
 
@@ -18,6 +18,10 @@ Dit is een web viewer die gemaakt is met de library MapLibre. Deze kaart maakt g
 !!! question "Vraag"
 
     Wat verandert er als je in- en uitzoomt op de kaart? 
+
+??? success "Antwoord"
+
+    Bij het inzoomen worden er nieuwe kaarttegels ingeladen. Als het goed is, zie je de tegels heel snel één voor één verschijnen. 
 
 **:arrow_right: Open de developer tools in je browser.** 
 
@@ -48,7 +52,7 @@ De URL is als volgt opgebouwd:
 
 ## Bekijk het voorbeeld in een code-editor
 
-We gaan nu de code van dichtbij bekijken. Maak gebruik van een code editor of IDE naar keuze om code te bekijken en uit te voeren. Hieronder een uitleg voor VSCode, maar je kunt natuurlijk zelf een keuze maken. 
+We gaan nu de code van dichtbij bekijken. Maak gebruik van een code-editor of IDE naar keuze om code te bekijken en uit te voeren. Hieronder een uitleg voor VSCode, maar je kunt natuurlijk zelf een keuze maken. 
 
 **:arrow_right: Fork de Git repository**
 
@@ -80,17 +84,22 @@ Als het goed is, zie je in de code `index.html` een `div` met als id `map`.
 
 In `main.js` zie je dat er bij `container` dat er naar diezelfde `map` wordt verwezen. In dit javascript bestand wordt allereerst de `mmplibre-gl` library geïmporteerd. Daarna wordt de kaart gedefinieerd:
 
-- `container`: `map` object in `index.html`
-- `style`: verwijst naar een json-bestand: <https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1/styles/standaard__webmercatorquad?f=json>. Hierin wordt gedefinieerd hoe de tiles gevisualiseerd worden
-- `center`: bepaalt het startmiddenpunt van de kaart (x- en y-coördinaten)
-- `zoom`: bepaalt het startzoomlevel van de kaart
-- `minZoom`: bepaalt het maximale niveau dat je mag uitzoomen
-- `maxZoom`: bepaalt het maximale niveau dat je mag inzoomen
+
+
+
+| Variabele | Beschrijving |
+| --------- | ------------ |
+| `container` | `map` object in `index.html`
+| `style` | verwijst naar een json-bestand, waarin wordt gedefinieerd hoe de tiles gevisualiseerd worden <br> <https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1/styles/standaard__webmercatorquad?f=json> |
+| `center` | bepaalt het startmiddenpunt van de kaart (x- en y-coördinaten) |
+| `zoom` | bepaalt het startzoomlevel van de kaart |
+| `minZoom`| bepaalt het maximale niveau dat je mag uitzoomen |
+| `maxZoom`| bepaalt het maximale niveau dat je mag inzoomen |
 
 Merk op dat je de URL naar de tegels zelf niet ziet in `main.js`. Die URL wordt namelijk in de `style json` aangeroepen. De `main.js` roept de `style json` aan en die roept vervolgens de bron van van de tiles aan. De `style json`  bepaalt ook hoe die tiles weergegeven moeten worden. 
 De bron van de tiles is in dit geval dus <https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1/tiles/WebMercatorQuad/{z}/{y}/{x}?f=mvt>
 
-**:arrow_right: Zoek in de** `style json` **de URL van de tiles op.**
+**:arrow_right: Zoek in de** `style json` **de URL van de tiles op (de source).**
 
 !!! note "Wil je hier meer over weten?"
 
@@ -98,13 +107,21 @@ De bron van de tiles is in dit geval dus <https://api.pdok.nl/kadaster/brt-achte
 
 **:arrow_right: Bekijk nog eens** de `style json`: <https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1/styles/standaard__webmercatorquad?f=json>
 
-
-Dit is een erg omvangrijke stijl. Hoe is dit opgebouwd? Dit is een json waarin de bron gedefinieerd wordt en de layers die daar in zitten en hoe die layers getoond moeten worden (kleuren, diktes, etc.).
+Dit is een erg omvangrijke stijl. Hoe is dit opgebouwd? Dit is een JSON-bestand waarin de bron gedefinieerd wordt en de layers die daar in zitten. Vervolgens schrijft het bestand voor hoe die layers getoond moeten worden (kleuren, diktes, etc.). Dit wordt gelezen door MapLibre en gerenderd. 
 
 **:arrow_right: Bekijk nog eens** `main.js`
 
 In dit geval staat de `style json` op een externe locatie, maar het kan ook een bestand op je eigen server zijn. 
 In dit geval is de `style json` beschikbaar gesteld door PDOK, maar je kunt ook zelf `style json` bestanden maken. Het voorbeeld is een erg groot stijlbestand, maar er zijn ook simpelere stijlen mogelijk.
+
+### Experimenteer met de viewer
+
+**:arrow_right: Pas zelf in** `main.js` **de volgende waardes aan en kijk wat er gebeurt in jouw webmap:**
+
+- `center`
+- `zoom`
+- `minZoom`
+- `maxZoom`
 
 ## Samenvatting
 
