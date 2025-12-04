@@ -1,6 +1,6 @@
 # Analyseer een voorbeeldkaart
 
-Zojuist heb je met behulp van de landing page verkend wat je allemaal met OGC API - Tiles kunt doen. We bekijken nu een voorbeeld web map die gemaakt is met behulp van OGC API - Tiles. Aan de hand hiervan ontdek je hoe een web map werkt en hoe de componenten van OGC API - Tiles met elkaar samenwerken. 
+Zojuist heb je met behulp van de landing page verkend wat je allemaal met OGC API - Tiles kunt doen. We bekijken nu een voorbeeld webmap die gemaakt is met behulp van OGC API - Tiles. Aan de hand hiervan ontdek je hoe een webmap werkt en hoe de componenten van OGC API - Tiles met elkaar samenwerken. 
 
 ## Bekijk het voorbeeld in een browser
 

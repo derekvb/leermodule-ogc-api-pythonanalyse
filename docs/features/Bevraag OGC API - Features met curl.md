@@ -1,10 +1,10 @@
 # Bevraag OGC API - Features met curl
 
 We hebben eerder gezien hoe je de API-documentatie in de browser kunt bekijken. Nu is het tijd om echt aan de slag te gaan met de API. 
-In de commandline kun je met behulp van de tool `cURL` data opvragen en versturen. Je kunt dit ook gebruiken om API's om data op te vragen en die data vervolgens terug te krijgen. Zo ook de OGC API's van PDOK. Je krijgt het resultaat terug als json-bestand. 
+In de commandline kun je met behulp van de tool `cURL` data opvragen en versturen. Je kunt dit ook gebruiken om API's om data op te vragen en die data vervolgens terug te krijgen. Zo ook de OGC API's van PDOK. Je krijgt het resultaat terug als JSON-bestand. 
 Ontwikkelaars gebruiken dit principe om API's te implementeren in hun eigen applicaties. 
 
-In dit deel stel je met behulp van de OpenAPI specification GET requests samen om de de OGC API - Features van de Basisregistratie Grootschalige Topografie (BGT) te bevragen. Die requests vuur je vervolgens met curl af. Het resultaat ontvang je als `json`. 
+In dit deel stel je met behulp van de OpenAPI specification GET requests samen om de OGC API - Features van de Basisregistratie Grootschalige Topografie (BGT) te bevragen. Die requests vuur je vervolgens met curl af. Het resultaat ontvang je als `json`. 
 
 ## Voorbereiding
 
@@ -40,7 +40,7 @@ Je krijgt nu het `curl` commando dat is afgevuurd en het resultaat (response) te
 
 Er is één parameter meegegeven: geef het resultaat als json. En we krijgen de specificatie inderdaad netjes te zien als json-document. 
 
-We kunnen het `curl` commando kopiëren en zelf uitvoeren in de command line. 
+We kunnen het `curl` commando kopiëren en zelf uitvoeren in de commandline. 
 
 !!! warning "Waarschuwing"
 
@@ -281,7 +281,7 @@ Standaard worden de features uitgeleverd in CRS84 coördinaatreferentiesysteem (
 
 **:arrow_right: Vraag de items op in de RD/Amersfoort CRS**
 
-Voeg de parameter toe voor het crs en de URL van RD/Amersfoort toe. Kijk in de de API specification als je er niet meteen uitkomt. 
+Voeg de parameter toe voor het crs en de URL van RD/Amersfoort toe. Kijk in de API specification als je er niet meteen uitkomt. 
 
 ??? success "Bekijk het antwoord"
 
@@ -305,4 +305,4 @@ Voeg de parameter toe voor het crs en de URL van RD/Amersfoort toe. Kijk in de d
 
 ## Resumé
 
-Je hebt in de oefeningen hierboven de OpenAPI specificatie opgevraagd waarmee je zelf API calls kunt samenstellen en voorbeelden van calls en responses kunt bekijken. Daarna heb je informatie over collecties opgevraagd en de items in die collecties opgevraagd. En dat allemaal in de commandline. Je kunt je voorstellen dat je dit soort calls in elk soort applicatie zou kunnen integreren. Hopelijk geeft dit onderdeel een goede basis voor het volgende onderdeel: maak een interactieve kaart met OGC API - Features. 
+Je hebt in de oefeningen hierboven de OpenAPI-specificatie opgevraagd waarmee je zelf API calls kunt samenstellen en voorbeelden van calls en responses kunt bekijken. Daarna heb je informatie over collecties opgevraagd en de items in die collecties opgevraagd. En dat allemaal in de commandline. Je kunt je voorstellen dat je dit soort calls in elk soort applicatie zou kunnen integreren. Hopelijk geeft dit onderdeel een goede basis voor de volgende onderdelen. 
