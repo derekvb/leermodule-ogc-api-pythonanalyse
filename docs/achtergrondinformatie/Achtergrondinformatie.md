@@ -55,7 +55,6 @@ Geodata is altijd opgeslagen in een bepaald coördinaatreferentiesysteem. Het co
     <img src="../../assets/geoid-c2.jpg" alt="Geoïde" width=40% />
 </div>
 
-
 De aarde lijkt meer op een aardappel, met bergen en valleien. We noemen dit een geoïde. Helaas is die geoïde eindeloos complex, wat het lastig maakt om de exacte vorm in een computer op te slaan. Daarom wordt geprobeerd om de vorm van de geoïde te benaderen met een ellipsoïde (3D ovaal). Dat leidt echter wel tot afwijkingen: de ene plek zal meer afwijken van de ellipsoïde dan de andere plek. Maar voor veel toepassingen op wereldwijde schaal is enige afwijking niet zo erg.
 
 <div style="text-align: center;">
@@ -88,7 +87,7 @@ Zie ook <https://www.nsgi.nl/coordinatenstelsels-en-transformaties/overzicht-coo
 
 [PDOK](https://www.pdok.nl/) is hét platform voor hoogwaardige geodata. Op PDOK kunnen overheidsorganisaties hun geodata publiceren en kunnen gebruikers en specialisten deze vinden. PDOK verbindt vraag en aanbod met elkaar. Bij PDOK vind je open datasets van de overheid met actuele geo-informatie. De datasets gaan over allerlei verschillende thema’s, zoals de bodem, mobiliteit en grenzen. En zijn afkomstig van allerlei verschillende overheidsorganisaties, zoals het CBS, ministeries, Rijkswaterstaat en het Kadaster.  
 
-PDOK is in 2013 ontstaan en is een dienst van het Kadaster. Het Kadaster is de Nederlandse overheidsorganisatie die vastlegt wie welke rechten heeft op al het vastgoed in Nederland. En het Kadaster zorgt dat burgers, bedrijven en overheden gebruik kunnen maken van betrouwbare en actuele geo-informatie.  
+PDOK is in 2013 ontstaan en is een dienst van het [Kadaster](https://www.kadaster.nl/). Het Kadaster is de Nederlandse overheidsorganisatie die vastlegt wie welke rechten heeft op al het vastgoed in Nederland. En het Kadaster zorgt dat burgers, bedrijven en overheden gebruik kunnen maken van betrouwbare en actuele geo-informatie.  
 
 ![De kracht van PDOK](<../assets/2201_PDOK open data portaal definitief.jpg>)
 
@@ -115,7 +114,7 @@ Een OGC API bestaat altijd uit dezelfde onderdelen. En de OGC API kent verschill
 
 !!! warning "TO DO"
 
-Onderstaand overzicht laat zien hoe de OGC API standaard is gebouwd met bouwblokklen. Al deze bouwblokken bevatten één of meerdere specificaties die door OGC zijn opgesteld en door de geocommunity zijn goedgekeurd.
+Onderstaand overzicht laat zien hoe de OGC API standaard is gebouwd met bouwblokken. Al deze bouwblokken bevatten één of meerdere specificaties die door OGC zijn opgesteld en door de geocommunity zijn goedgekeurd.
 
 ![De OGC API building blocks](../assets/ogc-api-building-blocks.png)
 

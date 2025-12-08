@@ -8,7 +8,7 @@ Welkom bij de Leermodule “Geodata bevragen en gebruiken met de OGC API’s van
 	
 	Doe mee! [Suggesties en verbetervoorstellen](#doe-mee) zijn welkom
 
-In deze leermodule ga je aan de slag met de OGC API’s van PDOK (Publieke Dienstverlening Op de Kaart). PDOK is hét geodataplatform van de Nederlandse overheid. Je leert in deze leermodule hoe je met behulp van OGC API’s geografische data in je browser kunt bekijken, hoe je de data kunt bevragen en hoe je de data op een interactieve kaart kunt tonen. Denk bijvoorbeeld aan een kaart waarop je kunt zien hoeveel inwoners er bij jou in de buurt wonen. 
+In deze leermodule ga je aan de slag met de OGC API’s van [PDOK](https://www.pdok.nl/) (Publieke Dienstverlening Op de Kaart). PDOK is hét geodataplatform van de Nederlandse overheid. Je leert in deze leermodule hoe je met behulp van OGC API’s geografische data in je browser kunt bekijken, hoe je de data kunt bevragen en hoe je de data op een interactieve kaart kunt tonen. Denk bijvoorbeeld aan een kaart waarop je kunt zien hoeveel inwoners er bij jou in de buurt wonen. 
 
 ## Wat is een OGC API? 
 
@@ -16,7 +16,7 @@ Een OGC API is een gestandaardiseerde interface voor het bekijken en bevragen va
 De OGC API standaard is ontwikkeld door het OGC. Het OGC (Open Geospatial Consortium) is een wereldwijde organisatie die standaarden voor het uitwisselen van geodata maakt. 
 OGC API is een wereldwijde standaard. Dat zorgt ervoor dat iedereen op dezelfde manier geodata kan gebruiken. Dat bespaart een hoop tijd, geld en frustratie. 
 
-Onderstaand overzicht laat zien hoe de OGC API standaard is gebouwd met bouwblokklen. Al deze bouwblokken bevatten één of meerdere specificaties die door OGC zijn opgesteld en door de geocommunity zijn goedgekeurd.
+Onderstaand overzicht laat zien hoe de OGC API standaard is gebouwd met bouwblokken. Al deze bouwblokken bevatten één of meerdere specificaties die door OGC zijn opgesteld en door de geocommunity zijn goedgekeurd.
 
 ![De OGC API bouwblokken](assets/ogc-api-building-blocks.png)
 
