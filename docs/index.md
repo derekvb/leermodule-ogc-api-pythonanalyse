@@ -22,7 +22,7 @@ Onderstaand overzicht laat zien hoe de OGC API standaard is gebouwd met bouwblok
 
 !!! info "OGC API bouwblokken"
 
-	Voor meer informatie over de OGC API bouwblokken, zie [Achtergrondinformatie](./achtergrondinformatie/Achtergrondinformatie.md/#ogc-api-onderdelen)
+	Voor meer informatie over de OGC API bouwblokken, zie [Achtergrondinformatie](./achtergrondinformatie/Wat zijn OGC APIs.md)
 
 ## Voor wie is deze leermodule bedoeld?
 
@@ -61,7 +61,7 @@ De stof is opgesplitst in de volgende onderdelen:
 
 | Onderdeel | Beschrijving |
 | ----------- | ----------- |
-| [Achtergrondinformatie](./achtergrondinformatie/Achtergrondinformatie.md) | *Wat is geografische data? Wat zijn OGC API’s? En wat doet PDOK?* |
+| [Achtergrondinformatie](./achtergrondinformatie/Introductie.md) | *Wat is geografische data? Wat zijn OGC API’s? En wat doet PDOK?* |
 | [OGC API – Tiles](./tiles/Introductie.md) | *Bekijk geodata op de kaart* |
 | [OGC API – Features](./features/Introductie.md) | *Maak een interactieve kaart: Vraag objectinformatie op, werk op een interactieve manier met data* |
 | [Afronding](Afronding.md) |  |

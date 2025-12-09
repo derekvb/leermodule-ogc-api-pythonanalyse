@@ -134,7 +134,7 @@ Response body:
 
 !!! info "CRS"
 
-    Het zal je opgevallen zijn dat er ook informatie tussen staat over het 'CRS'. Dit is het Coordinate Reference System. Er bestaan veel verschillende CRS'en. Kort gezegd bepaalt het CRS hoe de geografische coördinaten worden opgeslagen en hoe de data op de aardbol wordt geprojecteerd (zie ook [Achtergrondinformatie](../achtergrondinformatie/Achtergrondinformatie.md)). PDOK biedt zijn data in verschillende CRS'en aan. 
+    Het zal je opgevallen zijn dat er ook informatie tussen staat over het 'CRS'. Dit is het Coordinate Reference System. Er bestaan veel verschillende CRS'en. Kort gezegd bepaalt het CRS hoe de geografische coördinaten worden opgeslagen en hoe de data op de aardbol wordt geprojecteerd (zie ook [Achtergrondinformatie](../achtergrondinformatie/Wat is geo-informatie.md)). PDOK biedt zijn data in verschillende CRS'en aan. 
 
 !!! question "Vraag"
     
