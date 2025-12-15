@@ -51,9 +51,9 @@ Hieronder een handig overzicht van welke pagina bij welke API hoort.
 | [OpenAPI specification](#openapi-specification)  | Beschrijving van de verschillende API calls die deze API aanbiedt  | Altijd (OGC API - Common)  |
 | [Conformance](#conformance) | Aan welke OGC standaarden voldoet deze API? | Altijd (OGC API - Common) |
 | [Collections](#collections) | Featuredata | OGC API – Features |
-| [Tiles](#tiles) | Vector tiles (visualisatie)  | OGC API – Tiles |
-| [Styles](#styles) | Stijlen (opmaak) | OGC API – Styles |
-| [Tile Matrix Sets](#tile-matrix-sets) | Opbouw van de tegels | OGC API – Tiles |
+| [Tiles](#ogc-api-tiles-onderdelen) | Vector tiles (visualisatie)  | OGC API – Tiles |
+| [Styles](#ogc-api-tiles-onderdelen) | Stijlen (opmaak) | OGC API – Styles |
+| [Tile Matrix Sets](#ogc-api-tiles-onderdelen) | Opbouw van de tegels | OGC API – Tiles |
 
 Laten we de verschillende pagina’s eens gaan verkennen.
 
