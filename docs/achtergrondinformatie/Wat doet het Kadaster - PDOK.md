@@ -20,7 +20,7 @@ En op PDOK vind je steeds meer datasets die gepubliceerd worden als OGC API.
 
 PDOK is een dienst van het Kadaster.
 
-![De kracht van PDOK](<../assets/2201_PDOK open data portaal definitief.jpg>)
+![De kracht van PDOK](<../assets/achtergrondinformatie/2201_PDOK open data portaal definitief.jpg>)
 
 ??? info "De kracht van PDOK"
 

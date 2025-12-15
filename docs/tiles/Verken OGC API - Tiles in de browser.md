@@ -20,7 +20,7 @@ Je vind hier een overzicht van alle API’s van PDOK.
 
 Je bent nu op de landing page van de BGT OGC API terecht gekomen. 
 
-![Screenshot van de landing page van de BGT OGC API](../assets/tiles/landing_page.png)
+![Screenshot van de landing page van de BGT OGC API](../assets/landing_page.png)
 
 De BGT (Basisregistratie Grootschalige Topografie) is een landelijke dataset, met objecten in de openbare ruimte die meestal door overheden beheerd worden, zoals wegen, water en groen. We gebruiken de OGC API van deze dataset als voorbeeld. De BGT is op dit moment de meest complete OGC API implementatie bij PDOK, want de BGT heeft alle bouwblokken die we bij PDOK hebben geïmplementeerd. 
 
@@ -63,7 +63,7 @@ Laten we de verschillende pagina’s eens gaan verkennen.
 
 **:arrow_right: Klik op de landing page op 'OpenAPI specification'**
 
-![Screenshot van de OpenAPI specification](../assets/tiles/openapispecification.png)
+![Screenshot van de OpenAPI specification](../assets/openapispecification.png)
 
 Hier zie je de Swagger UI van deze API. Deze toont alle API calls die deze API ondersteunt. Daarmee toont de API specification dus alle mogelijkheden van de API, en hoe je deze mogelijkheden kunt benutten. De Swagger UI geeft voorbeeldrequests en je kunt zelf requests samenstellen. Die kun je direct in de browser testen. Je krijgt direct het antwoord. 
 
@@ -81,7 +81,7 @@ Laten we meteen gebruik maken van de Swagger UI en zelf eens iets testen.
 
 **:arrow_right: Klap** 'GET `/api` This document' **open**:
 
-![GET /api This document](../assets/JIOrOGF6Mz.png)
+![GET /api This document](../assets/get-api.png)
 
 Dit is de API call die je nodig hebt om de OpenAPI specification (deze pagina dus) op te vragen. 
 
@@ -115,7 +115,7 @@ Je hebt nu in het kort gezien wat je met de OpenAPI specification (de Swagger UI
 
 **:arrow_right: Klik op de landing page op 'Conformance'**
 
-![Screenshot van de Conformance pagina](../assets/tiles/conformance.png)
+![Screenshot van de Conformance pagina](../assets/conformance.png)
 
 De Conformance pagina toont welke OGC-standaarden deze API implementeert. We kunnen hier dus precies zien aan welke bouwblokken en versies van de OGC API-standaarden de BGT OGC API voldoet. 
 
@@ -297,11 +297,11 @@ Hier vind je een beschrijving van de eerder genoemde Tile Matrix Sets. Een Tile 
 
 Zoals je in onderstaande afbeelding kunt zien, heeft elke tegel in de matrix een X- en Y-coördinaat, waarmee de tegel wordt aangeduid. 
 
-![alt text](../assets/tilematrix.png)
+![alt text](../assets/tiles/tilematrix.png)
 
 Een Tile Matrix Set bestaat uit meerdere Tile Matrices; voor elk zoomlevel één. Het hoogste zoomlevel heeft slechts één tegel. Hoe lager het zoomlevel, des te meer tegels. Op die manier vormt het een piramide. 
 
-![alt text](../assets/tilematrixset.png)
+![alt text](../assets/tiles/tilematrixset.png)
 
 Zoals je kunt zien, zijn er voor de BGT OGC API drie Tile Matrix Sets. Inmiddels komen deze jou wel bekend voor.
 

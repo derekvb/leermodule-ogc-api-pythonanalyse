@@ -55,13 +55,13 @@ Voorbeelden van vectordatasets bij PDOK zijn:
 Geodata is altijd opgeslagen in een bepaald coördinaatreferentiesysteem. Het coördinaatreferentiesysteem bepaalt hoe de coördinaten worden opgeslagen. Oftewel: hoe de positie op aarde bepaald wordt. De aarde is niet plat hoewel kaarten dat wel zijn. Helaas is de aarde ook niet perfect rond of ovaal.
 
 <div style="text-align: center;">
-    <img src="../../assets/geoid-c2.jpg" alt="Geoïde" width=40% />
+    <img src="../../assets/achtergrondinformatie/geoid-c2.jpg" alt="Geoïde" width=40% />
 </div>
 
 De aarde lijkt meer op een aardappel, met bergen en valleien. We noemen dit een geoïde. Helaas is die geoïde eindeloos complex, wat het lastig maakt om de exacte vorm in een computer op te slaan. Daarom wordt geprobeerd om de vorm van de geoïde te benaderen met een ellipsoïde (3D ovaal). Dat leidt echter wel tot afwijkingen: de ene plek zal meer afwijken van de ellipsoïde dan de andere plek. Maar voor veel toepassingen op wereldwijde schaal is enige afwijking niet zo erg.
 
 <div style="text-align: center;">
-    <img src="../../assets/geoid1_lg.png" alt="Geoïde" width=60% />
+    <img src="../../assets/achtergrondinformatie/geoid1_lg.png" alt="Geoïde" width=60% />
 </div>
 
 Voor veel toepassingen is nauwkeurigheid wel belangrijk. Je hebt dan een ellipsoïde nodig die goed aansluit op het stukje aarde waarin je geïnteresseerd bent. Op andere plekken op de aarde zal die ellipsoïde totaal niet aansluiten. We noemen dat ook wel een lokaal coördinatenstelsel. Het Rijksdriehoeksstelsel, ook wel "RD Amersfoort" genoemd, is zo'n lokaal coördinatenstelsel. RD Amersfoort biedt hoge nauwkeurigheid in Nederland. Buiten Nederland is het echter nutteloos. 

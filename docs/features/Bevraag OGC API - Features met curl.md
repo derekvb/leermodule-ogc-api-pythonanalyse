@@ -20,7 +20,7 @@ Met de OpenAPI specification pagina kun je heel makkelijk commando's voor `curl`
 
 Weet je niet meer waar je die kunt vinden? Kijk dan even in één van de vorige onderdelen. 
 
-![BGT OpenAPI specification](../assets/firefox_rZYxsIgvbl.png)
+![BGT OpenAPI specification](../assets/features/bgt_openapi_specification.png)
 
 ## OpenAPI specification opvragen
 
@@ -28,7 +28,7 @@ Laten we beginnen met een simpele vraag. We vragen eerst de `OpenAPI specificati
 
 **:arrow_right: Klap** 'GET `/api` This document' **open**:
 
-![GET /api This document](../assets/JIOrOGF6Mz.png)
+![GET /api This document](../assets/get-api.png)
 
 **:arrow_right: Klik op *Try it out***
 
@@ -36,7 +36,7 @@ Laten we beginnen met een simpele vraag. We vragen eerst de `OpenAPI specificati
 
 Je krijgt nu het `curl` commando dat is afgevuurd en het resultaat (response) te zien:
 
-![curl get api specification](../assets/firefox_QQH2m2g7Dj.png)
+![curl get api specification](../assets/features/get-api-response.png)
 
 Er is één parameter meegegeven: geef het resultaat als json. En we krijgen de specificatie inderdaad netjes te zien als json-document. 
 
@@ -54,11 +54,11 @@ Voor Windows:
 curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/api?f=json" -H "accept: */*"
 ```
 
-![curl commando in cmd](../assets/WindowsTerminal_cZQqtp6rFq.png)
+![curl commando in cmd](../assets/features/curl-get-api.png)
 
 **:arrow_right: Druk op Enter en bekijk het resultaat:**
 
-![resultaat in cmd](../assets/WindowsTerminal_pxSf6UnL4F.png)
+![resultaat in cmd](../assets/features/curl-get-api-response.png)
 
 ## Vraag collecties op 
 
@@ -102,7 +102,7 @@ Response body:
 
 Je kunt ook de informatie van een specifieke collectie opvragen. Laten we als voorbeeld de ['spoor' collectie](https://api.pdok.nl/lv/bgt/ogc/v1/collections/spoor) nemen. 
 
-![een spoorlijn](../assets/spoorcollectie.jpg)
+![een spoorlijn](../assets/features/spoorcollectie.jpg)
 
 Voor Windows:
 
@@ -243,7 +243,7 @@ Response body:
 
 Laten we het ruimtelijk maken. Met een extra parameter kun je items opvragen binnen een specifiek gebied: een bounding box (ook wel `bbox`). Je vraagt dit gebied op met het x- en y-coördinaat van de linkeronderhoek, gevolgd door het x- en y-coördinaat van de rechterbovenhoek. Bijvoorbeeld: `4.458132,51.922276,4.478388,51.926696`
 
-![een bounding box op een kaart met coördinaten](../assets/qgis-bin_rNAEoh6ooV.png)
+![een bounding box op een kaart met coördinaten](../assets/features/boundingbox.png)
 
 Voor Windows:
 ```

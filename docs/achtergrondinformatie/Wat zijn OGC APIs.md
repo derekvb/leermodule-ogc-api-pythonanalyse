@@ -83,7 +83,7 @@ Bouwblok voor het opvragen van rasterdata, waarmee je ook berekeningen op celniv
 
 Bouwblok voor Environment Data Retrieval: het integraal opvragen van ruimtelijke klimaatdata die meerdere dimensies integreert: denk aan het opvragen van luchtvochtigheid, temperatuur en neerslag in 3D door de tijd heen.
 
-![Overzicht van OGC APIs](../assets/ogcapis-overview.png)
+![Overzicht van OGC APIs](../assets/achtergrondinformatie/ogcapis-overview.png)
 
 * Processes
 * Moving Features
