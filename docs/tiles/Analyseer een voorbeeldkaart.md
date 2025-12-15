@@ -13,6 +13,12 @@ We bekijken nu eerst de voorbeeldwebmap in een webbrowser.
 
 Dit is een web viewer die gemaakt is met de library MapLibre. Deze kaart maakt gebruik van de OGC API – Tiles van de BRT Achtergrondkaart: <https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1> 
 
+??? info "Wat is de BRT?"
+
+    BRT staat voor: Basisregistratie Topografie. Niet te verwarren met de BGT: Basisregistratie *Grootschalige* Topografie. De BRT is bedoeld voor kleinschalige topografie: schaal 1:250.000 tot schaalniveau 1:10.000. Dat maakt de BRT ideaal om te gebruiken als achtergrondkaart. 
+
+    De BRT is een basisregistratie. [Hier vind je meer informatie over basisregistraties](<../achtergrondinformatie/Wat is geo-informatie.md/#basisregistraties>). 
+
 ![BRT Achtergrondkaart](../assets/brtachtergrondkaart.png)
  
 !!! question "Vraag"
