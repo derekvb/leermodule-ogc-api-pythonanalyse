@@ -137,23 +137,220 @@ Een collectie is een verzameling objecten (*features*) van een bepaald type. Je 
 
 Elke collectie is voorzien van een beschrijving, trefwoorden en een afbeelding. Ook zie je de datum dat de collectie voor het laatst is bijgewerkt, de geografische begrenzing en de temporele begrenzing. 
 
-!!! question "Vraag"
-
-    to do
-
 Laten we de collectie 'Bak' als voorbeeld nemen. 
 
-**:arrow_right: Klik op Bekijk schema**
+**:arrow_right: Klik op 'Bekijk schema' bij de collectie 'Bak'**
 
 Je krijgt nu het schema te zien. 
 
-Een collectie heeft een eigen schema: kolommen van een bepaald datatype. Via *Bekijk schema* kun je dit schema bekijken. 
+Elke collectie heeft een eigen schema: welke velden c.q. kolommen c.q. attributen de collectie heeft, van welk datatype die kolommen zijn, of de kolom altijd ingevuld is en een omschrijving van de kolom. 
 
-!!! warning "TO DO"
+!!! info "Kolommen, attributen of velden?"
 
-Samenvatting
+    De termen kolom, attribuut en veld worden door elkaar heen gebruikt en betekenen in de praktijk hetzelfde: een eigenschap van een object (één rij) met een bepaald datatype. 
 
-:material-lightbulb: 
+    De term 'feature' kan ook verwarrend zijn. 'Feature' is letterlijk vertaald 'Eigenschap', maar in de GIS-wereld bedoelen we hier één object (één rij) mee. 
+
+Het schema geeft op die manier informatie over welke informatie (data) een collectie precies geeft en wat je met die informatie kunt doen. 
+
+!!! question "Vraag"
+
+    In welke kolom worden de coördinaten van de collectie opgeslagen? Bestaat de Bakcollectie uit punten, lijnen of vlakken?
+
+??? success "Antwoord"
+
+    De coördinaten, oftewel de geometrie van deze collectie, wordt opgeslagen in het attribuut `geometry`. Dit is een `point`
+
+**:arrow_right: Ga weer terug naar de pagina 'Collections'**
+
+We gaan nu de collectie 'Bak' verder bekijken. 
+
+**:arrow_right: Klik op 'Bak (BAK)'**
+
+![Bakcollectiepagina](../assets/features/collectie_bak.png)
+
+Ook hier vind je weer de beschrijving, trefwoorden en andere metadata over deze collectie. 
+
+En we vinden en link om door de Features te bladeren. Je hebt hier drie opties:
+
+1. Blader in de user interface door de features
+2. Bekijk de features in GeoJSON-formaat in een bepaald CRS (dropdownmenu)
+3. Bekijk de features in JSON-FG-formaat in een bepaald CRS (dropdownmenu)
+
+!!! info "GeoJSON en JSON-FG"
+
+    GeoJSON is een uitbreiding op het JSON-formaat dat het mogelijk maakt om geometrie op te slaan. Het is een open en breed geaccepteerd formaat voor featuredata voor webtoepassingen. Het ondersteunt echter *formeel gezien* alleen het WGS84 coördinaatreferentiesysteem (CRS). Het uitleveren van andere CRS'en is technisch gezien wel mogelijk, maar wordt niet door iedere client ondersteund.  
+
+    JSON-FG is een uitbreiding op GeoJSON en biedt officieel ondersteuning voor alle CRS'en. Het is echter nog een recente ontwikkeling. 
+
+    Om zoveel mogelijk clients te kunnen ondersteunen en zo veel mogelijk compatibiliteit te bieden, leveren we zowel JSON-FG als GeoJSON in verschillende CRS'en. 
+
+    Kijk voor meer informatie over CRS'en bij [Achtergrondinformatie](<../achtergrondinformatie/Wat is geo-informatie.md/#wat-zijn-coordinaatreferentiesystemen>)
+
+Laten we eerst in de browser door de Features bladeren.
+
+**:arrow_right: Klik op ['Features'](https://api.pdok.nl/lv/bgt/ogc/v1/collections/bak/items)**
+
+Je komt nu op de pagina terecht waarmee je door de features (c.q. 'items') in deze collectie kunt bladeren. 
+
+![alt text](../assets/features/collectie_bak_items.png)
+
+Je kunt hier filters toepassen: 
+
+- In welk **CRS** wil je de features bekijken?
+- Op welke **peildatum** wil je de features bekijken? In deze collectie hebben alle features namelijk een begin- en een einddatum. Met de peildatum kun je alle features bekijken die op de peildatum bestonden (*begindatum < peildatum < einddatum*).
+- Hoeveel items wil je in één keer ophalen (**limiet**)?
+- Als je het **Lokaal_id** van één feature hebt, kun je die opzoeken met deze filter.
+
+**:arrow_right: Stel de volgende filters in:**
+
+- **CRS: http://www.opengis.net/def/crs/EPSG/0/28992**
+- **Peildatum: 01-01-2026**
+- **Limiet: 10 items**
+- **Lokaal_id: leeg**
+
+**:arrow_right: Klik op 'Filters toepassen'**
+
+Na het toepassen van de filters krijg je de features rechts in de kaart te zien en onderin in tabelvorm onder elkaar, met de attributen in een tabel per feature. 
+
+**:arrow_right: Bekijk de kaart en de tabellen aandachtig**
+
+!!! question "Vraag"
+
+    Wanneer is de bak 'G0518.fcb8ea5528fbb4fae0402a0a313c2f1b' ontstaan? 
+
+??? hint
+
+    Je kunt ook de 'Lokaal_id' filter gebruiken. 
+
+??? success "Antwoord"
+
+    `creation_date` = `2013-09-30T22:00:00Z`
+
+Wellicht zijn de 'Vorige' en 'Volgende' knoppen je al opgevallen. 
+
+!!! question "Vraag"
+
+    Wat doet de knop 'Volgende'?
+
+??? success "Antwoord"
+
+    De knop 'Volgende' haalt de volgende 10 resultaten op. Zet je de limiet op 100 of 1000, dan haal je de volgende 100 of 1000 resultaten op. 
+
+Klik de volgende infobox open voor meer uitleg over het antwoord. 
+
+??? info "Paginering"
+
+    De resultaten worden verdeeld over pagina's. Dit noemen we ook wel pagination. Zo wordt voorkomen dat je in één keer alle resultaten binnenhaalt, wat erg langzaam zou zijn. De limiet bepaalt hoeveel items een pagina bevat. 
+
+**:arrow_right: Bekijk de URL in de adresbalk van je browser.** 
+
+!!! question "Vraag"
+
+    Wat is er in de URL in de adresbalk van je browser bijgekomen toen je naar de volgende pagina ging?
+
+??? hint
+
+    Klik nogmaals op 'Filters toepassen' en vervolgens op 'Volgende' en let op het verschil in de URL in de adresbalk. 
+
+??? success "Antwoord"
+
+    `cursor=Ww|Mhj0MA` is er bijgekomen. Dit is een manier om naar de volgende pagina te gaan. Elke pagina toont het aantal resultaten van de limiet. 
+
+Klik de volgende infobox open voor meer uitleg over het antwoord. 
+
+??? info "Cursor pagination en offset pagination"
+
+    Grofweg zijn er twee soorten pagination. Offset pagination werkt met een *offset* in het request. Met de offset geef je aan vanaf welk aantal je de resultaten wilt ophalen. Voor grotere datasets is dit echter niet schaalbaar. Een cursor is een identificatie voor een bepaalde batch items. Elke response geeft de cursor van de vorige en de volgende batch mee. Daarmee kun je vervolgens door de resultaten bladeren.  
+
+Je hebt nu gezien hoe je in de browser kunt filteren en de resultaten (de features) in een collectie kunt bekijken. 
+
+#### Filteren op basis van een bounding box
+
+Nu je een aantal basic filters hebt gezien, moeten we de belangrijkste ruimtelijke filter niet vergeten: filteren op basis van een bounding box. Een bounding box, ook wel een bbox, is een rechthoek op een kaart bestaande uit het x- en y-coördinaat van de linkeronderhoek, gevolgd door het x- en y-coördinaat van de rechterbovenhoek. Door deze als filter op te geven, krijg je alleen features terug die zich binnen deze rechthoek bevinden. 
+
+!!! info
+
+    Zie [het volgende onderdeel](<./Bevraag OGC API - Features met curl.md/#vraag-items-op-binnen-een-bounding-box>) voor meer informatie over de bounding box. 
+
+**:arrow_right: Klik in de kaart op het vierkantje**
+
+![Teken een bounding box](../assets/features/draw-boundingbox-1.png)
+
+**:arrow_right: Teken in de kaart een rechthoek**
+
+- **Klik in de linkerbovenhoek en klik in de rechteronderhoek.**
+- **Ondertussen kun je door te klikken de kaart verslepen.**
+
+![Teken een bounding box](../assets/features/draw-boundingbox-2.png)
+
+Vervolgens verschijnen de resultaten binnen deze rechthoek in de kaart en in tabelvorm.
+
+#### Filters in de URL
+
+Eerder zagen we dat er een parameter werd toegevoegd in de URL in de adresbalk (cursor). Wellicht is het je opgevallen dat er nog meer in de URL te vinden is. 
+
+Die URL ziet er waarschijnlijk ongeveer zo uit:
+
+```
+https://api.pdok.nl/lv/bgt/ogc/v1/collections/bak/items?crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F28992&datetime=2026-01-01T00%3A00%3A00.000Z&f=html&limit=10&bbox=4.2272271035977065%2C52.04836512237336%2C4.265429015995505%2C52.06308825720682
+```
+
+Laten we het eens opschonen, want de HTML encoding maakt het wat minder leesbaar:
+
+```
+https://api.pdok.nl/lv/bgt/ogc/v1/collections/bak/items?
+crs=http://www.opengis.net/def/crs/EPSG/0/28992&
+datetime=2026-01-01T00:00:00.000Z&
+f=html&
+limit=10&
+bbox=4.2272271035977065,52.04836512237336,4.265429015995505,52.06308825720682
+```
+
+Het is je hopelijk opgevallen dat de filters onderdeel zijn van de URL! 
+
+!!! question "Wat zou je met deze URL kunnen doen?"
+
+??? success "Antwoord"
+
+    Je zou de URL kunnen bewaren om de resultaten op een later moment te bekijken. Je zou ook de URL in een andere applicatie kunnen gebruiken. 
+
+Laten we de verschillende onderdelen van de URL eens bekijken. 
+
+| Parameter | Waarde | Toelichting |
+| --- | --- | --- |
+| `https://api.pdok.nl/lv/bgt/ogc/v1/collections/bak/items` |  | Items endpoint van de collectie |
+| `crs` | `http://www.opengis.net/def/crs/EPSG/0/28992` | CRS waarin de (coördinaten van de) items worden teruggegeven |
+| `cursor` | `Ww\|Mhj0MA` | ID van de pagina die wordt gegeven |
+| `datetime` | `2026-01-01T00:00:00.000Z` | Peildatum |
+| `f` | `html` | Formaat waarin het response wordt gegeven |
+| `limit` | `10` | Limiet op het aantal items per response |
+| `bbox` | `4.2272271035977065,52.04836512237336,4.265429015995505,52.06308825720682` | Ruimtelijk filter, bounding box waarin de items zich bevinden die worden gegeven |
+
+Je hebt nu gezien hoe je kunt filteren in de HTML-weergave.
+
+Je kunt de resultaten ook bekijken in GeoJSON en in JSON-FG. 
+
+**:arrow_right: Bekijk de GeoJSON-weergave en de JSON-FG-weergave en vergelijk deze met elkaar. Wat zijn de verschillen?**
+
+??? hint
+
+    Klik rechtsboven op 'GeoJSON' en op 'JSON-FG'. 
+
+    Verschillen zijn onder andere:
+
+    - GeoJSON heeft geen `coordRefSys` object
+    - Hoe de geometrie wordt opgeslagen is verschillend opgebouwd 
+
+Je hebt nu gezien hoe je OGC API - Features Collecties kunt bekijken in de web browser. Je hebt gezien dat een API uit verschillende collecties bestaat. Je weet nu hoe je door de features kunt bladeren en bovendien hoe je in de browser kunt filteren en de resultaten terug krijgt. 
+
+:material-lightbulb: Een dataset kan in één of meerdere collecties beschikbaar worden gesteld.
+
+:material-lightbulb: Een collectie is een op zich zelf staand onderdeel.
+
+:material-lightbulb: Een collectie heeft een eigen schema.
+
+:material-lightbulb: Met parameters kun je de collectie opvragen in een bepaald formaat of alleen items opvragen die aan een bepaalde voorwaarde voldoen.
 
 **:arrow_right: Ga weer terug naar de landing page**
 
