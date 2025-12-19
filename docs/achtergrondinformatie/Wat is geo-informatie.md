@@ -32,22 +32,22 @@ Geoinformatie is onmisbaar voor hulpdiensten, bijvoorbeeld om risicogebieden en 
 
 Veel van de datasets bij PDOK zijn een basisregistratie. Wat is een basisregistratie precies?
 
-Een basisadministratie is een officiële, landelijke registratie waarin gegevens worden vastgelegd die door veel overheidsorganisaties gebruikt worden. Zie het als een gezamelijke set van centrale gegevens: één plek waar betrouwbare, actuele en uniforme gegevens staan, zodat iedereen dezelfde informatie gebruikt.
+Een basisregistratie is een officiële, landelijke registratie waarin gegevens worden vastgelegd die door veel overheidsorganisaties gebruikt worden. Zie het als een gezamelijke set van centrale gegevens: één plek waar betrouwbare, actuele en uniforme gegevens staan, zodat iedereen dezelfde informatie gebruikt.
 
-Kenmerken van een basisadministratie
+Kenmerken van een basisregistratie
 
 Authentieke gegevens: De informatie is juridisch vastgesteld en mag niet zomaar worden aangepast.
 Uniform gebruik: Overheden en organisaties moeten deze gegevens gebruiken in hun processen.
 Actueel en betrouwbaar: Er gelden strenge regels voor bijhouding en kwaliteit.
 
-We kennen de volgende basisadministraties zonder geoinformatie:
+We kennen de volgende basisregistraties zonder geoinformatie:
 
 BRP – Basisregistratie personen
 HR – Handelsregister
 BRV – Basisregistratie Voertuigen (kentekenregister)
 BRI – Basisregistratie Inkomen
 
-en de volgende basisadministraties met geodata waarbij PDOK gedeeltelijke data uit of aan levert:
+en de volgende basisregistraties met geodata waarbij PDOK gedeeltelijke data uit of aan levert:
 
 BRT – Basisregistratie Topografie
 BRK – Basisregistratie Kadaster
@@ -57,7 +57,7 @@ BGT – Basisregistratie Grootschalige Topografie
 BRO – Basisregistratie Ondergrond
 
 Waarom is dit belangrijk?
-Stel je voor dat elke gemeente zijn eigen adressenlijst zou bijhouden. Dan krijg je fouten, bijvoorbeeld het aanvragen van een stroomaansluitingen bij verhuizingen, met dubbele gegevens en veel verwarring tot gevolg. Door één landelijke basisadministratie te gebruiken, werken alle partijen met dezelfde informatie. Dat bespaart tijd, voorkomt fouten en maakt samenwerking makkelijker.
+Stel je voor dat elke overheidsorganisatie zijn eigen adressenlijst zou bijhouden. Dan krijg je fouten, bijvoorbeeld het aanvragen van een stroomaansluitingen bij verhuizingen, met dubbele gegevens en veel verwarring tot gevolg. Door één landelijke basisregistratie te gebruiken, werken alle partijen met dezelfde informatie. Dat bespaart tijd, voorkomt fouten en maakt samenwerking makkelijker.
 
 [Hier vind je meer informatie over het stelsel van basisregistraties.](https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/stelsel-van-basisregistraties/10-basisregistraties/)
 
