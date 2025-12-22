@@ -28,3 +28,6 @@ site/webfonts/fa-solid-900.ttf
 site/webfonts/fa-solid-900.woff2
 site/webfonts/fa-v4compatibility.ttf
 site/webfonts/fa-v4compatibility.woff2
+.vscode/settings.json
+.vscode/launch.json
+
