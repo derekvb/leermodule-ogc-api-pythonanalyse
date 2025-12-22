@@ -336,11 +336,91 @@ De basis staat nu!
 
 ### Plot een GeoJSON bestand op de kaart
 
-!!! warning "TO DO"
+Laten we eens simpel beginnen en een GeoJSON-bestandje aan onze kaart toevoegen en visualiseren.
 
-We voegen nu een GeoJSON bestand aan onze kaart. 
+!!! info "GeoJSON"
 
-Inzicht: een statisch bestandje is geen goeie databron. Je kaart loopt al snel achter. Hiermee tonen we de meerwaarde van PDOK aan: een stabiele databron met altijd actuele data. Hier besteden we in het theoriedeel al aandacht aan
+    GeoJSON is een bestandsformaat, gebaseerd op JSON, om geodata op te slaan en uit te wisselen. Dit bestandsformaat is vooral geschikt voor uitwisseling van geodata via het internet. Libraries zoals MapLibre en Leaflet kunnen er goed mee overweg. 
+
+In de map `voorbeelden/features` is een GeoJSON-bestand aanwezig met daarin alle vestigingen van het Kadaster in Nederland: `kadaster.geojson`. 
+
+Laten we eerst de inhoud van de GeoJSON eens inspecteren.
+
+**:arrow_right: Bekijk `kadaster.geojson` in een code editor**
+
+Laten we de GeoJSON toevoegen aan onze kaart!
+
+**:arrow_right: Voeg de volgende code toe aan `main.js`:**
+
+	map.on('load', () => {
+		map.addSource('', {
+			type: 'geojson',
+			data: ''
+		});
+		map.addLayer({
+			'id': '',
+			'type': 'circle',
+			'source': '',
+			'paint': {
+				"circle-radius": 5, // straal van de cirkel
+				"circle-stroke-color": "#000000" // kleur van de cirkel
+			}
+		});
+	});
+
+**:arrow_right: Vul zelf de ontbrekende onderdelen in.**
+
+??? hint 
+
+    Kijk nog eens in het [vorige hoofdstuk](<./Analyseer een voorbeeldkaart.md>) of in `main.js` om te zien hoe je een bron en een kaartlaag toevoegt.
+
+Kom je er niet uit? Klik het antwoord dan open:
+
+??? success "Antwoord"
+
+		map.on('load', () => {
+			map.addSource('kadastersource', { // zelfgekozen naam voor de bron
+				type: 'geojson',
+				data: './kadaster.geojson' // bestandsnaam van het geojson-bestand
+			});
+			map.addLayer({
+				'id': 'kadaster', // zelfgekozen naam voor de kaartlaag
+				'type': 'circle',
+				'source': 'kadastersource', // naam van de bron, zie hierboven
+				'paint': {
+					"circle-radius": 5, // straal van de cirkel
+					"circle-stroke-color": "#000000" // kleur van de cirkel
+				}
+			});
+		});
+
+**:arrow_right: Test of jouw code werkt in de browser.**
+
+Als het goed is, ziet jouw kaart er nu zo uit:
+
+![kadastervestigingen op de kaart](../assets/casus/kadaster_geojson.png)
+
+!!! info
+
+    Kijk voor meer voorbeelden in [de officiële documentatie van MapLibre](<https://maplibre.org/maplibre-gl-js/docs/examples/add-a-geojson-polygon/>).
+
+!!! question "Vraag"
+
+    Is het toevoegen van een GeoJSON-bestand een handige manier om data toe te voegen? Wanneer is dit wel handig en wanneer niet?
+
+??? hint
+
+    `kadaster.geojson` is een statisch bestand
+
+??? success "Antwoord"
+
+    `kadaster.geojson` is een statisch bestand dat je zelf moet hosten. Het nadeel van een los bestandje is dat het al snel verouderd is. Wanneer er een Kadastervestiging bij komt of informatie verandert, is jouw webmap meteen verouderd. Het is veel werk om jouw bestand dan weer up-to-date te maken.
+
+    Nee, dit is dus geen handige manier om data toe te voegen. Tenzij je zeker weet dat de data nooit zal veranderen, maar die kans is klein. 
+
+Natuurlijk vind je op PDOK API's en web services die altijd up-to-date zijn. Als je gebruik maakt van de API's van PDOK weet je zeker dat je niet met verouderde data werkt. PDOK is een stabiele databron met altijd actuele data. 
+
+We gaan nu dan ook aan de slag met het toevoegen van featuredata (collecties) van PDOK OGC API - Features. 
 
 ### Vind geschikte featuredata
 
@@ -380,27 +460,21 @@ We krijgen nu alle datasets op het NGR te zien (hoeveel zijn het er?) maar we ku
 
 **:arrow_right: Vink nu bij Online Bronnen alleen 'OGC:API features' aan**
 
-(waarschijnlijk moet je op 'meer' klikken voordat je deze te zien krijgt)
+(misschien moet je op 'meer' klikken voordat je deze te zien krijgt)
 
 Nu krijg je alle OGC API - Features van PDOK te zien:
 
-!!! warning "TO DO"
-
-    afbeelding
+![Alle datasets met OGC API - Features op NGR](../assets/casus/ngr_features_resultaten_blur.png)
 
 !!! question "Vraag"
 
     Hoeveel OGC API - Features services krijg je nu te zien?
 
-!!! warning "TO DO"
-
 ??? success "Antwoord"
 
-    Momenteel (december 2025) zijn er ... datasets met een OGC API - Features:
+    Momenteel (december 2025) zijn er 94 datasets met een OGC API - Features:
 
-    !!! warning "TO DO"
-
-        afbeelding
+    ![het aantal datasets met een ogc api - features](../assets/casus/aantal_ogc_api-features.png)
 
 !!! info
 
@@ -438,15 +512,13 @@ Daarna is het aan jou om dit zelf te doen met andere kaartlagen.
 
 **:arrow_right: Ga weer terug naar NGR, naar de OGC API - Features resultaten:**
 
-!!! warning "TO DO"
-
-    afbeelding
+![Alle datasets met OGC API - Tiles op NGR](../assets/casus/ngr_features_resultaten.png)
 
 **:arrow_right: Zoek en klik op 'NWB - Wegen OGC API Features'**
 
-!!! warning "TO DO"
+!!! hint "Gebruik indien nodig de zoekbalk of filters"
 
-    afbeelding
+![OGC API - Features van de NWB wegen in het Nationaal Georegister](../assets/casus/ngr_nwb_features.png)
 
 **:arrow_right: Lees de beschrijving en bekijk de gerelateerde dataset 'Nationaal wegenbestand - wegen - Wegvakken en hectometerpunten (NWB)' (dit is het het bijbehorende dataset record)**
 
@@ -458,9 +530,167 @@ Je gaat nu naar de inmiddels welbekende landing page!
 
 We gaan nu een OGC API - Features toevoegen aan onze kaart.
 
+**:arrow_right: Noteer (kopieer) de URL van de landing page van de 'Nationaal wegenbestand - wegen - Wegvakken en hectometerpunten (NWB)' OGC API.**
+
+**Ga op de landing page naar 'Collections'.**
+
+**Klik op de collectie 'Wegvakken'.**
+
+![de wegvakken collectie](../assets/casus/wegvakken_collectie.png)
+
+Dit zijn alle wegen van heel Nederland. 
+
+**Noteer de naam van de collectie in de URL.** 
+
+Door de volgende code toe te voegen aan main.js, kun je de wegvakken collectie uit de Nationaal wegenbestand OGC API toevoegen aan je webmap.
+
+**:arrow_right: Voeg onderstaande code toe aan main.js:**
+
+	map.on('load', () => {
+		const wegvakkensource = 'wegvakken-src'
+
+		new OGCFeatureCollection(wegvakkensource, map, {
+			url: 'https://api.pdok.nl/rws/nationaal-wegenbestand-wegen/ogc/v1',
+			collectionId: 'wegvakken',
+			limit: 1000
+		})
+
+		map.addLayer({
+			'id': 'wegvakken',
+			'source': wegvakkensource,
+			'type': 'line',
+			'paint': {
+				'line-color': '#000000',
+				'line-width': 2
+			}
+		});
+	})
+
+**:arrow_right: Bekijk jouw kaart en test of je de wegvakken ziet.**
+
+!!! question "Vraag"
+
+    Wat valt je op? Zie je meteen alle wegen?
+
+??? success "Antwoord"
+    
+    Nee, je ziet niet meteen alle wegen. Je ziet hier en daar een snippertje. 
+
+    Dit komt doordat de OGC API - Features niet geoptimaliseerd is voor zoveel features. De requests worden met behulp van de bounding box opgeknipt, maar het aantal features dat in een bounding box zit, overstijgt de 1000 ruim. 
+
+    ![snippertjes](../assets/casus/features_snippertjes.png)
+
+!!! question "Vraag"
+
+    Hoe kun je ervoor zorgen dat je wel een compleet beeld krijgt? 
+
+??? success "Antwoord"
+
+    Wanneer je ver genoeg inzoomt, zie je wel alle features (alle wegen). Een bounding box bevat dan niet meer 1000 features.
+
+OGC API - Features is niet gemaakt met visualisatie als hoofddoel. Voor visualisatie is OGC API - Tiles geschikter. Toch kan het nuttign zijn om OGC API - Features te visualiseren, bijvoorbeeld wanneer je interactieve dingen met de data wilt doen. 
+
+Laten we ervoor zorgen dat de gebruiker niet meer die snippertjes te zien krijgt, maar een volledig beeld van de dataset. 
+
+We gaan dit doen door de weergave van de kaartlaag pas in te schakelen op een bepaald zoomniveau. 
+
+Eerst kijken we op welk zoomniveau alle features te zien zijn. 
+
+**:arrow_right: Zoom op de webmap in totdat je alle features ziet:**
+
+![ingezoomd zodat alle features zichtbaar zijn](../assets/casus/features_ingezoomd_zichtbaar_requests.png)
+
+**:arrow_right: Kijk in het netwerktabblad van de developer tools op welk zoomniveau je zit:**
+
+- **Bekijk de URL van het laatste tile request. Bijvoorbeeld <https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1/tiles/WebMercatorQuad/8/83/132?f=mvt> (fictief voorbeeld)**
+- **Het eerste getal achter `WebMercatorQuad` is het zoomlevel (in het fictieve voorbeeld hierboven dus 8) Noteer dit.**
+
+**:arrow_right: Voeg de volgende code toe aan de functie `map.addLayer()` in `main.js`:**
+
+    "minzoom": X, // vervang X door het zoomlevel
+
+Klap de hint uit als je er niet uit komt. 
+
+??? hint
+
+    De code:
+
+		map.on('load', () => {
+			const wegvakkensource = 'wegvakken-src'
+
+			new OGCFeatureCollection(wegvakkensource, map, {
+				url: 'https://api.pdok.nl/rws/nationaal-wegenbestand-wegen/ogc/v1',
+				collectionId: 'wegvakken',
+				limit: 1000
+			})
+
+			map.addLayer({
+				'id': 'wegvakken',
+				'source': wegvakkensource,
+				"minzoom": 14, // zichtbaar vanaf zoomlevel 14
+				'type': 'line',
+				'paint': {
+					'line-color': '#000000',
+					'line-width': 2
+				}
+			});
+		})
+
+    Je voegt dit toe na `const map = new maplibregl.Map()`
+
+!!! tip
+
+    Je kunt overigens met "maxzoom" instellen dat een kaartlaag niet meer zichtbaar is vanaf een bepaald zoomlevel. 
+
+Wanneer je de code hebt toegevoegd, zouden de features pas op een geschikt zoomlevel zichtbaar moeten worden. 
+
+**:arrow_right: Bekijk nu jouw webmap en controleer of dit zo is.**
+
+![de features zijn nog niet zichtbaar](../assets/casus/features_ingezoomd_nog_niet_zichtbaar.png)
+
+Eén zoomlevel verder:
+
+![1 niveau verder ingezoomd zijn de features wel zichtbaar](../assets/casus/features_ingezoomd_zichtbaar.png)
+
+!!! info "Visualisatie"
+
+    Als je wil, kun je de kleuren veranderen naar iets anders dan zwart. Kijk bij [OGC API - Tiles](<../tiles/Casus - Maak een kaart met OGC API - Tiles.md/#optie-3-maak-zelf-een-nieuwe-style-from-scratch>) en leer hoe je dit kunt doen. 
+
+Mooi, je hebt nu een collectie uit de OGC API van het Nationaal Wegenbestand toegevoegd aan jouw web map. Vervolgens heb je ingesteld dat de kaartlaag pas vanaf een bepaald zoomlevel zichtbaar wordt. 
+
 !!! warning "TO DO"
 
     Interactie toevoegen. Maak gebruik van: filter (+ historie), 1 item, bounding box, relaties
+
+#### Samenvatting kaartlagen toevoegen
+
+Je hebt nu gezien hoe je kaartlagen kunt toevoegen via main.js. Hieronder vatten we het nog eens samen: 
+
+| Onderdeel | Variabele | Beschrijving |
+| --------- | --------- | ------------ |
+| `new OGCFeatureCollection()` | `url` | URL van de landing page |
+| | `collectionId` | Naam van de collectie die je wilt toevoegen |
+| | `limit` | Aantal features dat per request wordt opgevraagd |
+| `map.addLayer()` | `id` | Zelfgekozen naam voor de kaartlaag |
+| | `source` | Naam van de hierboven gedefinieerde bron |
+| | `type` | Type kaartlaag (symbol, line of fill?) |
+| | `paint` | Hoe moet de kaartlaag worden gevisualiseerd? |
+
+#### Opdracht: voeg zelf kaartlagen toe
+
+Je hebt nu gezien dat je kaartlagen op meerdere manieren kunt toevoegen en stylen. We hebben dit aan de hand van voorbeelden voor gedaan.  
+
+Het is nu aan jou om verschillende extra kaartlagen toe te voegen. Je mag zelf bepalen op welke manier je dit doet, maar:
+
+**:arrow_right: Voeg minimaal 4 extra kaartlagen toe**
+
+**:arrow_right: Waarvan minimaal:**
+
+- **1 kaartlaag met punten (van het type `symbol` of `circle`)**
+- **1 kaartlaag met lijnen (van het type `line`)**
+- **1 kaartlaag met polygonen (van het type `fill`)**
+
+Grijp terug op je ontwerp om te bepalen welke kaartlagen je het beste kunt toevoegen. 
 
 ### Optioneel: extra functionaliteit
 
@@ -503,5 +733,5 @@ Je hebt als het goed is een prachtige webmap gemaakt. Gefeliciteerd! Laten we ee
 | Zet een ontwikkelomgeving op | Code kopiëren en klaarzetten. |
 | Maak een basiskaart | De onderlegger (`index.html` en `main.js`) voor de rest van het product. |
 | Vind geschikte featuredata | Geschikte datasets vinden via het Nationaal Georegister. |
-| Voeg de featuredata toe aan jouw kaart |  |
+| Voeg de featuredata toe aan jouw kaart | Toevoegen van een source en layer aan `main.js` |
 | Evalueer het eindresultaat | Voldeed het eindproduct aan het ontwerp? |

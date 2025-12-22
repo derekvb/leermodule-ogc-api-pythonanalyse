@@ -428,7 +428,7 @@ Daarna is het aan jou om dit zelf te doen met andere kaartlagen.
 
 **:arrow_right: Zoek en klik op 'BRT TOP10NL OGC API (Vector) Tiles'**
 
-![alt text](../assets/casus/ngr_brt_tiles.png)
+![OGC API - Tiles van de BRT TOP10NL in het Nationaal Georegister](../assets/casus/ngr_brt_tiles.png)
 
 **:arrow_right: Lees de beschrijving en bekijk de gerelateerde dataset BRT TOP10NL (dit is het het bijbehorende dataset record)**
 
@@ -466,7 +466,9 @@ Ga op de landing page naar Tiles
 
 Je hebt nu de URL van de tileset die je kunt gebruiken in je code. 
 
-Door de volgende code toe te voegen aan `main.js`, kun je de `gebouw_vlak` layer uit de BRT TOP10NL toevoegen aan je webmap:
+Door de volgende code toe te voegen aan `main.js`, kun je de `gebouw_vlak` layer uit de BRT TOP10NL toevoegen aan je webmap.
+
+**:arrow_right: Voeg onderstaande code toe aan main.js:**
 
     map.on('load', () => {
         map.addSource('top10nl', {
@@ -794,9 +796,9 @@ Het is nu aan jou om verschillende extra kaartlagen toe te voegen. Je mag zelf b
 
 **:arrow_right: Waarvan minimaal:**
 
-- **1 kaartlaag met punten (van het type symbol of circle)**
-- **1 kaartlaag met lijnen (van het type line)**
-- **1 kaartlaag met polygonen (van het type fill)**
+- **1 kaartlaag met punten (van het type `symbol` of `circle`)**
+- **1 kaartlaag met lijnen (van het type `line`)**
+- **1 kaartlaag met polygonen (van het type `fill`)**
 
 **:arrow_right: Gebruik minimaal 3 verschillende kleuren**
 

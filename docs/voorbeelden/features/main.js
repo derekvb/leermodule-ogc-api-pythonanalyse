@@ -11,7 +11,7 @@ const map = new maplibregl.Map({
 });
 
 map.on('load', () => {
-    const provinciegebiedsource = 'collection-src'
+    const provinciegebiedsource = 'provincie-src'
 
     new OGCFeatureCollection(provinciegebiedsource, map, {
         url: 'https://api.pdok.nl/kadaster/bestuurlijkegebieden/ogc/v1',

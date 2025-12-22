@@ -318,7 +318,7 @@ In onderstaande tabel vatten we samen hoe deze code precies werkt:
 | | `limit` | Aantal features dat per request wordt opgevraagd |
 | `map.addLayer()` | `id` | Zelfgekozen naam voor de kaartlaag |
 | | `source` | Naam van de hierboven gedefinieerde bron |
-| | `type` | Type kaartlaag is dit (symbol, line of fill?) |
+| | `type` | Type kaartlaag (symbol, line of fill?) |
 | | `paint` | Hoe moet de kaartlaag worden gevisualiseerd? |
 
 !!! info "Opmaak / visualisatie van kaartlagen"
