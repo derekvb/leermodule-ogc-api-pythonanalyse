@@ -137,7 +137,7 @@ Als het goed is heb je in het onderdeel [Analyseer een voorbeeldkaart](<./Analys
 
 Wij suggereren twee verschillende aanpakken: in een IDE werken of werken met een file manager en een teksteditor. 
 
- Hieronder volgt de uitleg voor Visual Studio Code en de meer klassieke aanpak. Maar uiteraard kun je zelf ook een andere IDE of een andere aanpak gebruiken. 
+Hieronder volgt de uitleg voor Visual Studio Code en de meer klassieke aanpak. Maar uiteraard kun je zelf ook een andere IDE of een andere aanpak gebruiken. 
 
 === "VSCode"
 
@@ -754,6 +754,18 @@ Een vlak heet in de MapLibre style spec `fill`. In een style json kun je deze al
 			}
 		}
     ]
+
+!!! info "Vlak toevoegen"
+
+	Wil je alleen de omlijning van een vlak tonen, en niet de binnenkant van het vlak inkleuren (dus een transparante invulling)? Dan kun je het vlak het beste als `line` visualiseren. 
+
+Hieronder vatten we samen welk `type` je nodigt hebt voor de geometrietypen:
+
+| Geometrietype | MapLibre style spec naam |
+| --- | --- |
+| Point | met een symbool: `symbol`. Als een simpele cirkel: `circle` |
+| LineString | `line` | 
+| Polygon | Transparante vulling: `line`. Gekleurde vulling: `fill` |
 
 
 #### Samenvatting kaartlagen toevoegen
