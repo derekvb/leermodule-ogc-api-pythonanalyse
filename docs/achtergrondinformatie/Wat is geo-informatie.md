@@ -4,7 +4,7 @@ Wat is geo-informatie? En hoe wordt geo-informatie precies opgeslagen? Hoe worde
 
 ## De kracht van geo-informatie
 
-Wat kun je precies met geo-informatie, ook wel ruimtelijke informatie genoemd? Geodata is overal om ons heen. Vaak hoor je dat 80% van alle data over een plek op aarde gaat.
+Wat kun je precies met geo-informatie, ook wel ruimtelijke informatie genoemd? Geodata is overal om ons heen. Er wordt ook wel gezegd dat 80% van alle data over een plek op aarde gaat.
 
 Data met geolocatie wordt op veel terreinen toegepast. Enkele voorbeelden:
 
