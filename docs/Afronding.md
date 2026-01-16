@@ -11,7 +11,6 @@ In deze terugblik kijk je aan de hand van de leerdoelen terug op jouw stappen: w
 	Na voltooiing van de leermodule:
 
 	- Ben je je bewust van de meerwaarde van geo-informatie;
-	- Ben je je bewust van het belang van geodata en PDOK;
 	- Ben je je bewust van de meerwaarde van het ontsluiten van geodata met gestandaardiseerde API's; 
 	- Ben je bekend met PDOK en het Kadaster en wat zij doen;
 	- Ken je de mogelijkheden van geodata en kun je voorbeelden van toepassingen noemen;

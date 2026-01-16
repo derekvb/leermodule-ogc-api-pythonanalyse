@@ -35,7 +35,6 @@ In eerste instantie is deze leermodule bedoeld voor IT-studenten. Jij bent bijvo
 	Na voltooiing van de leermodule:
 
 	- Ben je je bewust van de meerwaarde van geo-informatie;
-	- Ben je je bewust van het belang van PDOK;
 	- Ben je je bewust van de meerwaarde van het ontsluiten van geodata met gestandaardiseerde API's;
 	- Ben je bekend met PDOK en het Kadaster en wat zij doen;
 	- Ken je de mogelijkheden van geodata en kun je voorbeelden van toepassingen noemen;
