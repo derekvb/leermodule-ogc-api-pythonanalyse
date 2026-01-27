@@ -55,8 +55,7 @@ nav:
         - Introductie: features/Introductie.md
         - Verken OGC API - Features in de browser: features/Verken OGC API - Features in de browser.md
         - Bevraag OGC API - Features met curl: features/Bevraag OGC API - Features met curl.md
-        - Analyseer een voorbeeldkaart: features/Analyseer een voorbeeldkaart.md
-        - Casus - Maak een interactieve kaart met OGC API - Features: features/Casus - Maak een interactieve kaart met OGC API - Features.md
+        - Casus - Analyseer data met OGC API - Features met Python: features/Casus - Analyseer data met OGC API - Features met Python.md
         - Terugblik: features/Terugblik.md
     - Afronding: Afronding.md
     - Community: Community.md
