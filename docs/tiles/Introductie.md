@@ -10,7 +10,7 @@
 	    - Kun je voorbeelden van data via de landing page bekijken;
 	    - Kun je de URL's van de OGC API - Tiles vinden en gebruiken;
     - Weet je hoe een webmap werkt:
-        - Kun je een OGC API - Tiles op een webmap tonen;
+        - Kun je met OGC API - Tiles vector tiles op een webmap tonen;
         - Kun je een stijl kiezen voor een OGC API - Tiles op een webmap.
 
 In dit onderdeel verkennen we OGC API - Tiles en maken we een kaart. 

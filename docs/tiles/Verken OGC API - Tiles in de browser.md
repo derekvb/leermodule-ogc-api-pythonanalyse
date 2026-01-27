@@ -139,11 +139,13 @@ OpenAPI specification en Conformance waren alleen maar beschrijvingen, maar nu g
 
 ![Screenshot van de Tiles pagina](../assets/tiles/tiles.png)
 
+Met OGC API - Tiles kunnen vector tiles beschikbaar gesteld worden, maar ook andere soorten tiles zoals luchtfoto's. We richten ons nu specifiek op **vector tiles**.
+
 De BGT dataset wordt in meerdere kaartprojecties beschikbaar gesteld als vector tiles. Dat wil zeggen dat de data wordt aangeboden als kaarttegels. Een client haalt de data tegel voor tegel op. Die tegels zijn geoptimaliseerd om compact te zijn en tegelijkertijd een goede weergave van de data te geven. Dit is een efficiënte manier van bekijken van geodata. 
 
 !!! info "*Vector* Tiles?"
 
-    Van oudsher zijn kaarttegels afbeeldingen. Een Web Map Service (WMS) ontsluit bijvoorbeeld kaarttegels als `png` of `jpeg` afbeeldingen. Afbeeldingen laden heel snel in, sneller dan vector-geodata zelf. Een nadeel is echter dat de tegels door de server gerenderd moeten worden. Een gebruiker of ontwikkelaar kan zelf ook geen stijl kiezen. En bij ver inzoomen worden de afbeeldingen pixelig. Bovendien draaien labels niet mee bij draaien of pannen. Vector Tiles lossen dit op: door vectordata in tegels op te knippen kan deze snel gerenderd worden. Vector Tiles bieden de flexibliteit van vector data en de snelheid van raster tegels. 
+    Van oudsher zijn kaarttegels afbeeldingen. Een Web Map Service (WMS) ontsluit bijvoorbeeld kaarttegels als `png` of `jpeg` afbeeldingen. Afbeeldingen laden heel snel in, sneller dan vector-geodata zelf. Een nadeel is echter dat de tegels door de server gerenderd moeten worden. Een gebruiker of ontwikkelaar kan zelf ook geen stijl kiezen. En bij ver inzoomen worden de afbeeldingen pixelig. Bovendien draaien labels niet mee bij draaien of pannen. Vector Tiles lossen dit op: door vectordata te versimpelen en in tegels op te knippen kan deze snel gerenderd worden. Vector Tiles bieden de flexibliteit van vectordata en de snelheid van rastertegels. 
 
     Zie ook [Raster of vectordata?](<../achtergrondinformatie/Wat is geo-informatie.md/#raster-of-vectordata>).
 
@@ -311,7 +313,7 @@ We richten ons voor nu weer even op de `NetherlandsRDNewQuad` Tile Matrix Set.
 
 **:arrow_right: Klik op 'NetherlandsRDNewQuad'**
 
-Je krijgt nu een tabel te zien waarin elk zoomniveau beschreven wordt. In totaal zijn er dus 16 zoomlevels in deze Tile Matrix Set. Je ziet dat elke tegel 256x256 pixels groot is. En zoals je kunt zien, heeft het hoogste zoomlevel één tegel. Het laagste zoomlevel heeft veel meer tegels. Daarin kun je dus weer die piramidevorm herkennen. 
+Je krijgt nu een tabel te zien waarin elk zoomniveau beschreven wordt. In totaal zijn er dus 16 zoomlevels in deze Tile Matrix Set. Je ziet dat elke tegel 256x256 cellen groot is. En zoals je kunt zien, heeft het hoogste zoomlevel één tegel. Het laagste zoomlevel heeft veel meer tegels. Daarin kun je dus weer die piramidevorm herkennen. 
 
 !!! question "Vraag"
 

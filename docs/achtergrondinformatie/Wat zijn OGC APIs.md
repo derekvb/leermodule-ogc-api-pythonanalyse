@@ -25,7 +25,7 @@ Onderstaand overzicht laat zien hoe de OGC API standaard is gebouwd met bouwblok
 
 ![De OGC API building blocks](../assets/ogc-api-building-blocks.png)
 
-Onderstaande tabel toont welke bouwblokken er zijn, toont of dit bouwblok bij PDOK is geïmplementeerd (stand: december 2025) en waar dit bouwblok in deze leermodule wordt behandeld. 
+Onderstaande tabel toont welke bouwblokken er zijn, toont of dit bouwblok bij PDOK is geïmplementeerd (stand: januari 2026) en waar dit bouwblok in deze leermodule wordt behandeld. 
 
 | Onderdeel | Beschrijving | Beschikbaar bij PDOK? |  Leermodule |
 | ----- | ---- | :----: | :----: |

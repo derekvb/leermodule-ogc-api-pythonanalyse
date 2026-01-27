@@ -66,9 +66,13 @@ Stel je voor dat elke overheidsorganisatie zijn eigen adressenlijst zou bijhoude
 
 Geodata kan op verschillende manieren worden opgeslagen in een bestand of database. Op welke manier dat is, heeft ook gevolgen voor wat je precies met de data kunt doen. Dit is zeker bij ruimtelijke data het geval, omdat geometrie op heel veel verschillende manier gerepresenteerd kan worden. Dit is heel erg afhankelijk van de beoogde toepassing van de data.
 
-## Raster of vectordata?
+## Raster- of vectordata?
 
-Er worden ruwweg twee vormen van geodata onderscheiden: vectordata en rasterdata. In het geval van rasterdata wordt de informatie opgeslagen als afbeelding. Elke pixel (rastercel) heeft een waarde. Dat kan een kleur zijn in het geval van een luchtfoto, maar die waarde kan ook iets anders voorstellen, zoals hoogte of temperatuur. In het geval van vectordata wordt de informatie opgeslagen in een tabel met een geometrie. De geometrie kan een punt, lijn of vlak zijn.
+Er worden ruwweg twee vormen van geodata onderscheiden: vectordata en rasterdata. In het geval van rasterdata wordt de informatie opgeslagen in een afbeelding. Een rasterbestand bestaat uit een vlakdekkend grid. Een rasterbestand is samengesteld uit één of meerdere banden. Elke rastercel ("pixel") in elke band heeft een numerieke waarde. Samen kunnen deze waardes een kleur voorstellen, bijvoorbeeld in een luchtfoto of satellietbeeld. Er is dan een band voor Red, een band voor Green en een band voor Blue (RGB). Maar de waardes in enkelbands rasterebstanden kunnen ook iets anders voorstellen, zoals hoogte of temperatuur. 
+
+Vectordata gebruikt een totaal andere benadering om geodata op te slaan. In het geval van vectordata wordt de informatie opgeslagen in een tabel met een geometrie. De geometrie kan opgeslagen worden als verzameling coördinaten in een attribuut in een tabel (met een eigen datatype *geometrie*). De geometrie kan een punt, lijn of vlak zijn. 
+
+Rasterdata en vectordata hebben door de specieke manier waarop data wordt opgeslagen verschillende voor- en nadelen ten opzichte van elkaar. Daardoor kennen raster- en vectordata hun eigen toepassingsgebieden.
 
 Over het algemeen (er zijn uitzonderingen mogelijk) wordt rasterdata gebruikt voor continue fenomenen, zoals hoogte en temperatuur. Dit soort natuurlijke fenomenen hebben geen harde grenzen en lopen continue door. Dit in tegenstelling tot discrete informatie, zoals gebouwen en administratieve grenzen. Die beginnen en eindigen op posities die wij als mensen hebben aangewezen. Voor discrete fenomenen gebruiken we dan ook vooral vectordata.
 

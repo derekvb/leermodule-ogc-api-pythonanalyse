@@ -1,5 +1,5 @@
 # Maak een kaart met OGC API – Tiles
-We gaan zelf een kaart maken met behulp van de library MapLibre. Dit is een JavaScript library voor het maken van interactieve webmaps. Het doel is niet om MapLibre zelf te leren; we gebruiken MapLibre alleen om de werking van OGC API aan te tonen. 
+We gaan zelf een kaart maken met vector tiles met behulp van de library MapLibre. Dit is een JavaScript library voor het maken van interactieve webmaps. Het doel is niet om MapLibre zelf te leren; we gebruiken MapLibre alleen om de werking van OGC API aan te tonen. 
 
 Je maakt deze kaart aan de hand van een casus. Eerst introduceren we deze casus. Hierna maak je je eigen kaart. En tot slot voeg je een OGC API - Tiles toe aan jouw eigen kaart. 
 
@@ -328,9 +328,13 @@ Als het goed is, heeft jouw kaart nu een goed initieel zoomlevel, minimum zoomle
 
     De boundingbox tool gebruikt 'XYZ' tiles van Mapbox. Die gebruiken een ander tiling scheme: de tegelgrootte is bijvoorbeeld 512x512 pixels ipv 256x256 pixels. 
 
-### Vind geschikte tiledata
+### Vind geschikte vector tiledata
 
 De basis staat! Nu is het tijd om kaartlagen toe te voegen. Als het goed is, heb je in de ontwerpfase geïdentificeerd welke informatie je wilt tonen. Nu ga je hier geschikte databronnen voor zoeken. 
+
+!!! info "(Vector) tiles?"
+
+	We richten ons in dit onderdeel specifiek op vector tiles. Met OGC API - Tiles kunnen in principe ook raster tiles beschikbaar worden gesteld: bijvoorbeeld een luchtfoto. Maar we behandelen nu alleen vector tiles. 
 
 Er zijn veel verschillende plekken waar je geodatasets kunt vinden. We beperken ons voor nu tot het [Nationaal Georegister](https://www.nationaalgeoregister.nl/) en [PDOK.nl](https://www.pdok.nl/). 
 
@@ -436,9 +440,9 @@ Daarna is het aan jou om dit zelf te doen met andere kaartlagen.
 
 Je gaat nu naar de inmiddels welbekende landing page!
 
-### Voeg de tiledata toe aan jouw kaart
+### Voeg de vector tiledata toe aan jouw kaart
 
-Je kunt tiledata op twee manieren toevoegen aan jouw webmap: 1) voeg losse kaartlagen toe of 2) maak gebruik van een style. 
+Je kunt vector tiledata op twee manieren toevoegen aan jouw webmap: 1) voeg losse kaartlagen toe of 2) maak gebruik van een style. 
 
 Beide methodes hebben zo hun voor- en nadelen. 
 
@@ -448,7 +452,7 @@ Je kunt ook gebruik maken van een style. Je kunt gebruik maken van een styling d
 
 We demonstreren beide methodes. 
 
-#### Tiledata als losse kaartlagen toevoegen
+#### Vector tiledata als losse kaartlagen toevoegen
 
 Ga op de landing page naar Tiles
 
@@ -525,7 +529,7 @@ Bijvoorbeeld in <https://api.pdok.nl/brt/top10nl/ogc/v1/styles/brt_top10nl__webm
 
 In een GIS-client, zoals QGIS, kun je ook tiles en styles inladen. Je kunt dan in de UI bekijken welke kaartlagen in de style in de source zitten. Die namen kun je vervolgens in jouw eigen code aanroepen.
 
-#### Tiledata door middel van een style toevoegen
+#### Vector tiledata door middel van een style toevoegen
 
 Een alternatief voor het toevoegen van losse kaartlagen is om gebruik te maken van een style. In `main.js` wordt als volgt een style aangeroepen:
 
@@ -837,13 +841,13 @@ Samenvattend: stelt jouw webmap de doelgroep in staat om hun vragen te beantwoor
 
 ## Conclusie
 
-Je hebt als het goed is een prachtige webmap gemaakt. Gefeliciteerd! Laten we eens nagaan wat we allemaal gedaan hebben:
+Je hebt als het goed is een prachtige webmap met vector tiles gemaakt. Gefeliciteerd! Laten we eens nagaan wat we allemaal gedaan hebben:
 
 | Onderdeel | Beschrijving |
 | --- | --- |
 | Maak een ontwerp voor jouw webmap | Aan de hand van doelgroep, doel, benodigde informatie en geografische afbakening. |
 | Zet een ontwikkelomgeving op | Code kopiëren en klaarzetten. |
 | Maak een basiskaart | De onderlegger (`index.html` en `main.js`) voor de rest van het product. |
-| Vind geschikte tiledata | Geschikte datasets vinden via het Nationaal Georegister. |
-| Voeg de tiledata toe aan jouw kaart | Toevoegen losse kaartlagen en maken van een style. |
+| Vind geschikte vector tiledata | Geschikte datasets vinden via het Nationaal Georegister. |
+| Voeg de vector tiledata toe aan jouw kaart | Toevoegen losse kaartlagen en maken van een style. |
 | Evalueer het eindresultaat | Voldeed het eindproduct aan het ontwerp? |
