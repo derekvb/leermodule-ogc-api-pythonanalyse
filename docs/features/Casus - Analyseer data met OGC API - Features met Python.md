@@ -6,3 +6,5 @@ Eerst introduceren we de casus waaraan je gaat werken. Daarna laadt je de data u
 !!! warning "TO DO"
 
     Dit onderdeel is nog in ontwikkeling. 
+
+Zie notebook
