@@ -4,7 +4,7 @@ We hebben eerder gezien hoe je de API-documentatie in de browser kunt bekijken. 
 In de commandline kun je met behulp van de tool `cURL` data opvragen en versturen. Je kunt dit ook gebruiken om API's om data op te vragen en die data vervolgens terug te krijgen. Zo ook de OGC API's van PDOK. Je krijgt het resultaat terug als JSON-bestand. 
 Ontwikkelaars gebruiken dit principe om API's te implementeren in hun eigen applicaties. 
 
-In dit deel stel je met behulp van de OpenAPI specification GET requests samen om de OGC API - Features van de Basisregistratie Grootschalige Topografie (BGT) te bevragen. Die requests vuur je vervolgens met curl af. Het resultaat ontvang je als `json`. 
+In dit deel stel je met behulp van de OpenAPI specification GET requests samen om de OGC API - Features van de Basisregistratie Grootschalige Topografie (BGT) te bevragen. Die requests vuur je vervolgens met `curl` af. Het resultaat ontvang je als `json`. 
 
 ## Voorbereiding
 
@@ -265,7 +265,7 @@ Standaard worden de features uitgeleverd in CRS84 coördinaatreferentiesysteem (
     Voor Windows:
 
     ```
-    curl - X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/put?f=json"  -H "accept: */*"
+    curl -X "GET" "https://api.pdok.nl/lv/bgt/ogc/v1/collections/put?f=json"  -H "accept: */*"
     ```
 
     Response body:
@@ -303,6 +303,6 @@ Voeg de parameter toe voor het crs en de URL van RD/Amersfoort toe. Kijk in de A
         }
         ...
 
-## Resumé
+## Samenvatting
 
 Je hebt in de oefeningen hierboven de OpenAPI-specificatie opgevraagd waarmee je zelf API calls kunt samenstellen en voorbeelden van calls en responses kunt bekijken. Daarna heb je informatie over collecties opgevraagd en de items in die collecties opgevraagd. En dat allemaal in de commandline. Je kunt je voorstellen dat je dit soort calls in elk soort applicatie zou kunnen integreren. Hopelijk geeft dit onderdeel een goede basis voor de volgende onderdelen. 
