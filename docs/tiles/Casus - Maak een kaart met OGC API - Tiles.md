@@ -310,7 +310,7 @@ Je hebt nu de zoomlevels afgedwongen voor de gebruiker. Laten we nu het `maxBoun
 
 **:arrow_right: Voeg de volgende code toe aan jouw `main.js`:**
 
-    maxBounds: [5.08530, 52.07246], [5.16769, 52.10060] //vervang de coördinaten door jouw eigen coördinaten. 
+    maxBounds: [[5.08530, 52.07246], [5.16769, 52.10060]] //vervang de coördinaten door jouw eigen coördinaten. 
 
 **:arrow_right: Test jouw web map: Werkt het goed en is jouw interessegebied volledig zichtbaar?**
 
