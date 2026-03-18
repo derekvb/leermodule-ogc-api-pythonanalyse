@@ -30,7 +30,7 @@ De BGT (Basisregistratie Grootschalige Topografie) is een landelijke dataset, me
 
     De BGT is een basisregistratie. Dat wil zeggen dat wettelijk is vastgelegd hoe overheden de dataset moeten beheren (o.a. up to date houden) en gebruiken en wat de kwaliteit van de data is. Een basisregistratie heeft altijd één of meerdere bronhouders. Zij beheren de basisregistratie, maken daar afspraken over en zijn de eigenaar van de data. Er zijn nog meer basisregistraties. Een groot deel van de basisregistraties bevatten voornamelijk geodata. Bijvoorbeeld de BAG, de BRT en de BRK. [Hier vind je meer informatie over het stelsel van basisregistraties.](https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/stelsel-van-basisregistraties/10-basisregistraties/) 
 
-De landing page is een voor mensen leesbare beschrijving en toegangspunt van de API. Door mensen leesbaar? Ja wel, want er is ook een beschrijving die vooral voor machines is gemaakt.  
+De landing page is een voor mensen leesbare beschrijving en toegangspunt van de API. Voor mensen leesbaar? Jawel, want er is ook een beschrijving die vooral voor machines is gemaakt.  
 
 !!! question "Vraag"
 
@@ -46,14 +46,14 @@ De BGT wordt beschikbaar gesteld als OGC API – Features en als OGC API – Til
 
 Hieronder een handig overzicht van welke pagina bij welke API hoort. 
 
-| Pagina | Toelichting | Wanneer? |
-| ----------- | ----------- | ----------- |
-| [OpenAPI specification](#openapi-specification)  | Beschrijving van de verschillende API calls die deze API aanbiedt  | Altijd (OGC API - Common)  |
-| [Conformance](#conformance) | Aan welke OGC standaarden voldoet deze API? | Altijd (OGC API - Common) |
-| [Collections](#collections) | Featuredata | OGC API – Features |
-| [Tiles](#tiles) | Vector tiles (visualisatie)  | OGC API – Tiles |
-| [Styles](#styles) | Stijlen (opmaak) | OGC API – Styles |
-| [Tile Matrix Sets](#tile-matrix-sets) | Opbouw van de tegels | OGC API – Tiles |
+| Pagina                                          | Toelichting                                                       | Wanneer?                  |
+|-------------------------------------------------|-------------------------------------------------------------------|---------------------------|
+| [OpenAPI specification](#openapi-specification) | Beschrijving van de verschillende API calls die deze API aanbiedt | Altijd (OGC API - Common) |
+| [Conformance](#conformance)                     | Aan welke OGC standaarden voldoet deze API?                       | Altijd (OGC API - Common) |
+| [Collections](#collections)                     | Featuredata                                                       | OGC API – Features        |
+| [Tiles](#tiles)                                 | Vector tiles (visualisatie)                                       | OGC API – Tiles           |
+| [Styles](#styles)                               | Stijlen (opmaak)                                                  | OGC API – Styles          |
+| [Tile Matrix Sets](#tile-matrix-sets)           | Opbouw van de tegels                                              | OGC API – Tiles           |
 
 Laten we de verschillende pagina’s eens gaan verkennen.
 
@@ -135,7 +135,7 @@ We verkennen deze pagina nu niet. We doen dit in het onderdeel [OGC API - Featur
 
 **:arrow_right: Klik op de landing page op 'Tiles'**
 
-OpenAPI specification en Conformance waren alleen maar beschrijvingen, maar nu gaan we echt data bekijken gelukkig! 
+OpenAPI specification en Conformance waren alleen maar beschrijvingen, maar nu gaan we gelukkig echt data bekijken! 
 
 ![Screenshot van de Tiles pagina](../assets/tiles/tiles.png)
 
@@ -338,10 +338,10 @@ In dit onderdeel heb je in de browser de landing page (HTML weergave) van een OG
 
 Hopelijk heb je hiermee een beeld van wat een OGC API allemaal kan en hoe je snel kunt zien wat voor data er in een OGC API zit, specifiek voor OGC API - Tiles. We deden dat aan de hand van de dataset Basisregistratie Grootschalige Topografie. We hebben de volgende onderdelen van de OGC API besproken:
 
-| Onderdeel | Toelichting |
-| --------- | ----------- |
-| OpenAPI specification | Swagger UI die de mogelijkheden van de API toont. |
-| Conformance | Overzicht van de standaarden waaraan deze API voldoet. |
-| Tiles | URL's van de tilesets van deze API en de verschillende projecties waarin de dataset wordt aangeboden |
-| Styles | URL's en voorbeeldweergaves van de stijlen die PDOK beschikbaar stelt. | 
-| Tile Matrix Sets | Beschrijving van de Tile Matrix Sets: zoomniveaus en pixelgroottes van de tegels. 
+| Onderdeel             | Toelichting                                                                                          |
+|-----------------------|------------------------------------------------------------------------------------------------------|
+| OpenAPI specification | Swagger UI die de mogelijkheden van de API toont.                                                    |
+| Conformance           | Overzicht van de standaarden waaraan deze API voldoet.                                               |
+| Tiles                 | URL's van de tilesets van deze API en de verschillende projecties waarin de dataset wordt aangeboden |
+| Styles                | URL's en voorbeeldweergaves van de stijlen die PDOK beschikbaar stelt.                               | 
+| Tile Matrix Sets      | Beschrijving van de Tile Matrix Sets: zoomniveaus en pixelgroottes van de tegels.                    |

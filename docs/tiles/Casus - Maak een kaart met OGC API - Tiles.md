@@ -67,7 +67,7 @@ Stel jezelf de volgende vragen: Welk doel wil de doelgroep bereiken met jouw web
 
 Stel dat we als doel nemen: *inzicht bieden in de leefbaarheid van jouw buurt*. Wat versta je precies onder *inzicht*? En wat versta je precies onder het begrip *leefbaarheid*? 
 
-Een zekere afbakening is ook handig. Waar is de kaart voor bedoeld en waar is de kaart vooral niet voort bedoeld? Met één kaart kun je helaas geen wereldvrede stichten. Met andere woorden: wat is de scope van deze webmap? 
+Een zekere afbakening is ook handig. Waar is de kaart voor bedoeld en waar is de kaart vooral niet voor bedoeld? Met één kaart kun je helaas geen wereldvrede stichten. Met andere woorden: wat is de scope van deze webmap? 
 
 !!! tip
 
@@ -83,9 +83,9 @@ Een zekere afbakening is ook handig. Waar is de kaart voor bedoeld en waar is de
 
 De doelgroep wil een bepaald doel bereiken met behulp van jouw webmap.
 
-Wat voor soort informatie is er nodig om de doelgroep te helpen met het bereiken van hun doel? Welke informatie/data is daar voor nodig? En in welke vorm moet de data worden aangeboden? 
+Wat voor soort informatie is er nodig om de doelgroep te helpen met het bereiken van hun doel? Welke informatie/data is daarvoor nodig? En in welke vorm moet de data worden aangeboden? 
 
-- **Wat voor informatiebehoefte:** Is er behoefte aan operationele informatie, of informatie die vooral wordt gebruikt voor besluiten op tactisch of strategisch niveau?
+- **Wat voor informatiebehoefte:** is er behoefte aan operationele informatie, of informatie die vooral wordt gebruikt voor besluiten op tactisch of strategisch niveau?
 - **Aggregatieniveau:** op welk niveau moet de data geaggregeerd zijn? Is er vooral detail nodig of abstracte informatie (bijvoorbeeld gemiddeldes)?
 - **Tijdschaal:** op welke tijdschaal is er informatie nodig? Actuele data of bijvoorbeeld gemiddeldes over de afgelopen jaren?
 - **Visualisatie:** hoe moet de data worden gevisualiseerd? 
@@ -137,7 +137,7 @@ Als het goed is heb je in het onderdeel [Analyseer een voorbeeldkaart](<./Analys
 
 Wij suggereren twee verschillende aanpakken: in een IDE werken of werken met een file manager en een teksteditor. 
 
-Hieronder volgt de uitleg voor Visual Studio Code en de meer klassieke aanpak. Maar uiteraard kun je zelf ook een andere IDE of een andere aanpak gebruiken. 
+Hieronder volgt de uitleg voor Visual Studio Code (VSCode) en de meer klassieke aanpak. Maar uiteraard kun je zelf ook een andere IDE of een andere aanpak gebruiken. 
 
 === "VSCode"
 
@@ -384,7 +384,7 @@ Nu krijg je alle OGC API - Tiles van PDOK te zien:
 
 ??? success "Antwoord"
 
-    Momenteel (december 2025) zijn er 7 datasets met een OGC API - Tiles:
+    Momenteel (februari 2026) zijn er 7 datasets met een OGC API - Tiles:
 
     ![het aantal datasets met een ogc api - tiles](../assets/casus/aantal_ogc_api-tiles.png)
 
@@ -396,7 +396,7 @@ Nu je weet hoe je op NGR alle beschikbare OGC API - Tiles kunt vinden, is het ti
 
 !!! info
 
-    Het aanbod vector tiles is op dit moment (december 2025) nog wat beperkt. Wellicht heb je daar last van voor het uitvoeren van jouw casus. We hopen het aanbod spoedig uit te breiden!
+    Het aanbod vector tiles is op dit moment (februari 2026) nog wat beperkt. Wellicht heb je daar last van voor het uitvoeren van jouw casus. We hopen het aanbod spoedig uit te breiden!
 
 !!! question "Vraag"
 
@@ -422,7 +422,7 @@ Voer vervolgens de volgende stappen uit (we leggen hierna uit hoe je dit precies
 
 **:arrow_right: Voeg de Tile Set toe aan jouw web map.**
 
-We laten nu zien hoe je één kaartlaag toevoegt. We doen dit met de 'BRT TOP10NL OGC API (Vector) Tiles'. 
+We laten nu zien hoe je één kaartlaag toevoegt. We doen dit met de 'BRT TOP10NL OGC API (Vector) Tiles' service. 
 
 Daarna is het aan jou om dit zelf te doen met andere kaartlagen. 
 
