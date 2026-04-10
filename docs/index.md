@@ -50,7 +50,7 @@ In eerste instantie is deze leermodule bedoeld voor IT-studenten. Jij bent bijvo
 
 ## Benodigde voorkennis
 
-Om deze leermodule goed te kunnen volgen, is het handig dat je al kunt werken met (REST) API's en data. Daarnaast is basiskennis web development en JavaScript noodzakelijk. En tot slot kun je omgaan met de commandline. 
+Om deze leermodule goed te kunnen volgen, is het handig dat je al kunt werken met (REST) API's en data. Daarnaast is basiskennis web development en JavaScript noodzakelijk. Voor het deel ['Analyseer data met OGC API - Features met Python'](<features/Casus - Analyseer data met OGC API - Features met Python.md>) gaan we ervan uit dat je Python kunt en bekend bent met notebookomgevingen. En tot slot kun je omgaan met de commandline. 
 
 ## Uit welke onderdelen bestaat deze leermodule?
 
