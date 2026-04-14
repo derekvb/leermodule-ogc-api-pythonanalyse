@@ -46,14 +46,14 @@ De BGT wordt beschikbaar gesteld als OGC API – Features en als OGC API – Til
 
 Hieronder een handig overzicht van welke pagina bij welke API hoort. 
 
-| Pagina | Toelichting | Wanneer? |
-| ----------- | ----------- | ----------- |
-| [OpenAPI specification](#openapi-specification)  | Beschrijving van de verschillende API calls die deze API aanbiedt  | Altijd (OGC API - Common)  |
-| [Conformance](#conformance) | Aan welke OGC standaarden voldoet deze API? | Altijd (OGC API - Common) |
-| [Collections](#collections) | Featuredata | OGC API – Features |
-| [Tiles](#ogc-api-tiles-onderdelen) | Vector tiles (visualisatie)  | OGC API – Tiles |
-| [Styles](#ogc-api-tiles-onderdelen) | Stijlen (opmaak) | OGC API – Styles |
-| [Tile Matrix Sets](#ogc-api-tiles-onderdelen) | Opbouw van de tegels | OGC API – Tiles |
+| Pagina                                          | Toelichting                                                       | Wanneer?                  |
+|-------------------------------------------------|-------------------------------------------------------------------|---------------------------|
+| [OpenAPI specification](#openapi-specification) | Beschrijving van de verschillende API calls die deze API aanbiedt | Altijd (OGC API - Common) |
+| [Conformance](#conformance)                     | Aan welke OGC standaarden voldoet deze API?                       | Altijd (OGC API - Common) |
+| [Collections](#collections)                     | Featuredata                                                       | OGC API – Features        |
+| [Tiles](#ogc-api-tiles-onderdelen)              | Vector tiles (visualisatie)                                       | OGC API – Tiles           |
+| [Styles](#ogc-api-tiles-onderdelen)             | Stijlen (opmaak)                                                  | OGC API – Styles          |
+| [Tile Matrix Sets](#ogc-api-tiles-onderdelen)   | Opbouw van de tegels                                              | OGC API – Tiles           |
 
 Laten we de verschillende pagina’s eens gaan verkennen.
 
@@ -171,7 +171,7 @@ We gaan nu de collectie 'Bak' verder bekijken.
 
 Ook hier vind je weer de beschrijving, trefwoorden en andere metadata over deze collectie. 
 
-En we vinden en link om door de Features te bladeren. Je hebt hier drie opties:
+En we vinden een link om door de Features te bladeren. Je hebt hier drie opties:
 
 1. Blader in de user interface door de features
 2. Bekijk de features in GeoJSON-formaat in een bepaald CRS (dropdownmenu)

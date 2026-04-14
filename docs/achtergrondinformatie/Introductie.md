@@ -9,7 +9,7 @@
     - Weet je wat een OGC API is en wat de mogelijkheden ervan zijn;
     - Ken je voorbeelden van toepassingen met geo-informatie.
 
-OGC API's stellen geodata beschikbaar. Wat is geodata, ook wel **ruimtelijke informatie**, eigenlijk? Deze leermodule gaat over de OGC API's van PDOK; **wat doet PDOK eigenlijk?** En **wat zijn OGC API's** eigenlijk precies? En waarom is het **belangrijk om data op een gestandaardiseerde en generieke manier te ontsluiten?** Dat behandelen we allemaal in dit onderdeel.  
+OGC API's stellen geodata beschikbaar. Wat is geodata, ook wel **ruimtelijke informatie**, eigenlijk? Deze leermodule gaat over de OGC API's van PDOK; **wat doet PDOK eigenlijk?** En **wat zijn OGC API's** eigenlijk precies? En waarom is het **belangrijk om data op een gestandaardiseerde en generieke manier te ontsluiten**? Dat behandelen we allemaal in dit onderdeel.  
 
 ## Wat is geo-informatie?
 
