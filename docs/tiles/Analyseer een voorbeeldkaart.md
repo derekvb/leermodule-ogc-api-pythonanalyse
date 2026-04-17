@@ -78,15 +78,15 @@ https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1/tiles/WebMercatorQuad/
 
 Hoe is deze URL precies opgebouwd?
 
-| Template | Voorbeeld | Beschrijving |
-| --- | --- | --- |
-| `https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1/` | `https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1/` | Landing page |
-| `tiles` | `tiles` | Dataset tileset |
-| `{tileMatrixSetId}` | `WebMercatorQuad` | Naam van de TileMatrixSet |
-| `{tileMatrix}` | `9` | Nummer van de matrix (zoomlevel) |
-| `{tileRow}` | `168` | Tile rijnummer (positie in de matrix) |
-| `{tileCol}` | `262` | Tile kolomnummer (positie in de matrix) |
-| `f=mvt` | `f=mvt` | Formaat waarin de tile moet worden uitgeleverd. In dit geval Mapbox vector tile (mvt) |
+| Template                                                    | Voorbeeld                                                   | Beschrijving                                                                          |
+|-------------------------------------------------------------|-------------------------------------------------------------|---------------------------------------------------------------------------------------|
+| `https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1/` | `https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1/` | Landing page                                                                          |
+| `tiles`                                                     | `tiles`                                                     | Dataset tileset                                                                       |
+| `{tileMatrixSetId}`                                         | `WebMercatorQuad`                                           | Naam van de TileMatrixSet                                                             |
+| `{tileMatrix}`                                              | `9`                                                         | Nummer van de matrix (zoomlevel)                                                      |
+| `{tileRow}`                                                 | `168`                                                       | Tile rijnummer (positie in de matrix)                                                 |
+| `{tileCol}`                                                 | `262`                                                       | Tile kolomnummer (positie in de matrix)                                               |
+| `f=mvt`                                                     | `f=mvt`                                                     | Formaat waarin de tile moet worden uitgeleverd. In dit geval Mapbox vector tile (mvt) |
 
 Kijk nog eens in het [vorige hoofdstuk](<./Verken OGC API - Tiles in de browser.md/#tile-matrix-sets>) als je dit nog niet helemaal begrijpt. 
 
@@ -94,7 +94,7 @@ Zie voor meer informatie [de OGC API workshop](<https://ogcapi-workshop.ogc.org/
 
 ## Bekijk het voorbeeld in een code-editor
 
-We gaan nu de code van dichtbij bekijken. Maak gebruik van een code-editor of IDE naar keuze om code te bekijken en uit te voeren. Hieronder een uitleg voor VSCode, maar je kunt natuurlijk zelf een keuze maken. 
+We gaan nu de code van dichtbij bekijken. Maak gebruik van een code-editor of IDE naar keuze om code te bekijken en uit te voeren. Hieronder een uitleg voor Visual Studio Code, maar je kunt natuurlijk zelf een keuze maken. 
 
 **:arrow_right: Fork de Git repository**
 
@@ -126,14 +126,14 @@ Als het goed is, zie je in de code `index.html` een `div` met als id `map`.
 
 In `main.js` zie je dat er bij `container` dat er naar diezelfde `map` wordt verwezen. In dit javascript bestand wordt allereerst de `mmplibre-gl` library geïmporteerd. Daarna wordt de kaart gedefinieerd:
 
-| Variabele | Beschrijving |
-| --------- | ------------ |
-| `container` | `map` object in `index.html`
-| `style` | verwijst naar een json-bestand, waarin wordt gedefinieerd hoe de tiles gevisualiseerd worden <br> <https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1/styles/standaard__webmercatorquad?f=json> |
-| `center` | bepaalt het startmiddenpunt van de kaart (x- en y-coördinaten) |
-| `zoom` | bepaalt het startzoomlevel van de kaart |
-| `minZoom`| bepaalt het maximale niveau dat je mag uitzoomen |
-| `maxZoom`| bepaalt het maximale niveau dat je mag inzoomen |
+| Variabele   | Beschrijving                                                                                                                                                                                          |
+|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `container` | `map` object in `index.html`                                                                                                                                                                          |
+| `style`     | verwijst naar een json-bestand, waarin wordt gedefinieerd hoe de tiles gevisualiseerd worden <br> <https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1/styles/standaard__webmercatorquad?f=json> |
+| `center`    | bepaalt het startmiddenpunt van de kaart (x- en y-coördinaten)                                                                                                                                        |
+| `zoom`      | bepaalt het startzoomlevel van de kaart                                                                                                                                                               |
+| `minZoom`   | bepaalt het maximale niveau dat je mag uitzoomen                                                                                                                                                      |
+| `maxZoom`   | bepaalt het maximale niveau dat je mag inzoomen                                                                                                                                                       |
 
 Merk op dat je de URL naar de tegels zelf niet ziet in `main.js`. Die URL wordt namelijk in de `style json` aangeroepen. De `main.js` roept de `style json` aan en die roept vervolgens de bron van de tiles aan. De `style json`  bepaalt ook hoe die tiles weergegeven moeten worden. 
 De bron van de tiles is in dit geval dus <https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1/tiles/WebMercatorQuad/{z}/{y}/{x}?f=mvt>
@@ -187,9 +187,9 @@ Hopelijk heb je door te experimenteren ontdekt wat deze parameters precies doen.
 
 Je hebt nu een voorbeeldkaart bekeken en de werking ervan geanalyseerd. De voorbeeldkaart maakte gebruik van de BRT Achtergrondkaart met de standaardstijl in WebMercator. Je hebt gezien hoe MapLibre OGC API vectortiles kan renderen. En je hebt gezien welke onderdelen hiervoor nodig zijn:
 
-| Naam | Voorbeeld | Beschrijving |
-| --- | --- | --- |
-| Index | `index.html` | HTML-code voor basisinformatie. |
-| JavaScript | `main.js` | JavaScriptcode voor de functionaliteit van de webmap.  |
-| Style | `https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1/styles/standaard__webmercatorquad?f=json` | Opmaak van de tegels. Roept één of meerdere tilesets op. |
-| Tileset | <https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1/tiles/WebMercatorQuad/{z}/{y}/{x}?f=mvt> | Bron van de tegels. | 
+| Naam       | Voorbeeld                                                                                           | Beschrijving                                             |
+|------------|-----------------------------------------------------------------------------------------------------|----------------------------------------------------------|
+| Index      | `index.html`                                                                                        | HTML-code voor basisinformatie.                          |
+| JavaScript | `main.js`                                                                                           | JavaScript code voor de functionaliteit van de webmap.   |
+| Style      | <https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1/styles/standaard__webmercatorquad?f=json> | Opmaak van de tegels. Roept één of meerdere tilesets op. |
+| Tileset    | `https://api.pdok.nl/kadaster/brt-achtergrondkaart/ogc/v1/tiles/WebMercatorQuad/{z}/{y}/{x}?f=mvt`  | Bron van de tegels.                                      | 

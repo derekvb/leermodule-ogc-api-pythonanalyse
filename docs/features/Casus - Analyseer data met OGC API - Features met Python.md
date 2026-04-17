@@ -1,5 +1,5 @@
 # Casus - Analyseer data met OGC API - Features in Python
-Tot nu toe hebben we vooral gekeken naar visualisatie van data. Het bekijken van geodata is maar slechts één aspect van het gebruiken van geodata. In dit onderdeel analyseer je data zodat op basis van bestaande data nieuwe informatie ontstaat. Je doet dit met behulp van verschillende pythonlibraries in een notebook. En aan de hand van een casus. 
+Tot nu toe hebben we vooral gekeken naar visualisatie van data. Het bekijken van geodata is maar slechts één aspect van het gebruiken van geodata. In dit onderdeel analyseer je data zodat op basis van bestaande data nieuwe informatie ontstaat. Je doet dit met behulp van verschillende Python libraries in een notebook. En aan de hand van een casus. 
 
 Eerst doen we wat oefeningen om affiniteit te krijgen met OGC API - Features in python. Hiervoor hebben we een Jupyter notebook klaargezet. 
 
